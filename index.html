@@ -106,7 +106,7 @@
         return fetch(`${url_}/users/${username}/repos`, {
             headers: {
                 'Accept': 'application/vnd.github.mercy-preview+json',
-                'Authorization': 'token 949ff16b506473631dae63db5b9e2f4e6ee37f2e'
+                'Authorization': 'token 632527a6a3e7f9046a37fe2edb788bf709c5667d'
             }
         })
         .then(response => response.json())
@@ -121,7 +121,7 @@
         .then((reposLanguageUrls) => {
             return reposLanguageUrls.map(url => fetch(url, {
                 headers: {
-                    'Authorization': 'token 949ff16b506473631dae63db5b9e2f4e6ee37f2e',
+                    'Authorization': 'token 632527a6a3e7f9046a37fe2edb788bf709c5667d',
                 }
             }));
         })
