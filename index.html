@@ -63,8 +63,7 @@
 <script>
     const ctx_ = document.getElementById("myChart").getContext('2d');
     const url_ = 'https://api.github.com';
-    
-    // const token_ = 'ef73445cfd31f454bf741e9f59e0c226cc45b533';
+   
     const button_ = document.getElementById('search_button');
 
     let myChart_ = null;
@@ -112,7 +111,7 @@
         return fetch(`${url_}/users/${username}/repos`, {
             headers: {
                 'Accept': 'application/vnd.github.mercy-preview+json',
-                'Authorization': `token ${token_}`
+                // 'Authorization': `token ${token_}`
             }
         })
         .then(response => response.json())
@@ -127,7 +126,7 @@
         .then((reposLanguageUrls) => {
             return reposLanguageUrls.map(url => fetch(url, {
                 headers: {
-                    'Authorization': `token ${token_}`,
+                    // 'Authorization': `token ${token_}`,
                 }
             }));
         })
