@@ -64,7 +64,7 @@
     const ctx_ = document.getElementById("myChart").getContext('2d');
     const url_ = 'https://api.github.com';
     
-    const token_ = '7596e61224f3230e3c75766982d46774eeea29a9';
+    const token_ = 'UmFsMTU6MGUyYTRiODZlNmVmOGExOWU1YzNmYWQ3MzE4MGU4NGYyODM5M2RjMw==';
     const button_ = document.getElementById('search_button');
 
     let myChart_ = null;
@@ -113,7 +113,7 @@
             mode: 'cors',
             headers: {
                 'Accept': 'application/vnd.github.mercy-preview+json',
-                'Authorization': `Basic ${btoa('Ral15:'+token_)}`
+                'Authorization': `Basic ${token_}`
             }
         })
         .then(response => response.json())
@@ -129,7 +129,7 @@
             return reposLanguageUrls.map(url => fetch(url, {
                 mode: 'cors',
                 headers: {
-                    'Authorization': `Basic ${btoa('Ral15:'+token_)}`
+                    'Authorization': `Basic ${token_}`
                 }
             }));
         })
