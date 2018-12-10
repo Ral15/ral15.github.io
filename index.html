@@ -56,15 +56,15 @@
         <span id="error-text" class="error-message"></span>
     </div>
 
-    <div class="center-text" style="height: 500px; width: 500px;">
+    <div class="center-text" style="height: 500px; width: 500px; margin: auto;">
         <canvas id="myChart" width="300" height="300"></canvas>
     </div>
-<script type="text/javascript" src="./token.js"></script>
+<!-- <script type="text/javascript" src="./token.js"></script> -->
 <script>
     const ctx_ = document.getElementById("myChart").getContext('2d');
     const url_ = 'https://api.github.com';
     
-    // const token_ = 'ef73445cfd31f454bf741e9f59e0c226cc45b533';
+    const token_ = '7596e61224f3230e3c75766982d46774eeea29a9';
     const button_ = document.getElementById('search_button');
 
     let myChart_ = null;
@@ -110,9 +110,10 @@
      */    
     const fetchUserRepositories = (username) => {
         return fetch(`${url_}/users/${username}/repos`, {
+            mode: 'cors',
             headers: {
                 'Accept': 'application/vnd.github.mercy-preview+json',
-                'Authorization': `token ${token_}`
+                'Authorization': `Basic ${btoa('Ral15:'+token_)}`
             }
         })
         .then(response => response.json())
@@ -126,8 +127,9 @@
         })
         .then((reposLanguageUrls) => {
             return reposLanguageUrls.map(url => fetch(url, {
+                mode: 'cors',
                 headers: {
-                    'Authorization': `token ${token_}`,
+                    'Authorization': `Basic ${btoa('Ral15:'+token_)}`
                 }
             }));
         })
