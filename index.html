@@ -26,9 +26,6 @@
         .btn {
           border-radius: 4px;
           border: solid 1px rgba(74, 74, 74, 0.07);
-          /*font-size: 14px;
-          text-align: center;
-          color: #000;*/
         }
 
         .error-message {
@@ -60,14 +57,14 @@
     </div>
 
     <div class="center-text" style="height: 500px; width: 500px;">
-        <canvas id="myChart" width="300" height="300" style="display: inline-block!important;"></canvas>
+        <canvas id="myChart" width="300" height="300"></canvas>
     </div>
+<!-- <script type="text/javascript" src="./token.js"></script> -->
 <script>
-
     const ctx_ = document.getElementById("myChart").getContext('2d');
     const url_ = 'https://api.github.com';
     
-
+    const token_ = 'ef73445cfd31f454bf741e9f59e0c226cc45b533';
     const button_ = document.getElementById('search_button');
 
     let myChart_ = null;
@@ -101,12 +98,21 @@
         .catch((e) => console.log({e}));
     };
 
-
+    /**
+     * Requests user's repositories from Github's API.
+     *
+     * Using Gihub's API, the list of repositories that have
+     * a 'valid' language is returned given a username.
+     *
+     * @param {string} username - Github username.
+     *
+     *  @return {array} Array with pending fetch promises 
+     */    
     const fetchUserRepositories = (username) => {
         return fetch(`${url_}/users/${username}/repos`, {
             headers: {
                 'Accept': 'application/vnd.github.mercy-preview+json',
-                'Authorization': 'token 632527a6a3e7f9046a37fe2edb788bf709c5667d'
+                'Authorization': `token ${token_}`
             }
         })
         .then(response => response.json())
@@ -121,7 +127,7 @@
         .then((reposLanguageUrls) => {
             return reposLanguageUrls.map(url => fetch(url, {
                 headers: {
-                    'Authorization': 'token 632527a6a3e7f9046a37fe2edb788bf709c5667d',
+                    'Authorization': `token ${token_}`,
                 }
             }));
         })
