@@ -59,11 +59,12 @@
     <div class="center-text" style="height: 500px; width: 500px;">
         <canvas id="myChart" width="300" height="300"></canvas>
     </div>
-<script type="text/javascript" src="./token.js"></script>
+<!-- <script type="text/javascript" src="./token.js"></script> -->
 <script>
     const ctx_ = document.getElementById("myChart").getContext('2d');
     const url_ = 'https://api.github.com';
-   
+    
+    const token_ = '3c65e1a99aafa4d2906872535953a97a5034d314';
     const button_ = document.getElementById('search_button');
 
     let myChart_ = null;
@@ -109,9 +110,10 @@
      */    
     const fetchUserRepositories = (username) => {
         return fetch(`${url_}/users/${username}/repos`, {
+            credentials: 'include',
             headers: {
                 'Accept': 'application/vnd.github.mercy-preview+json',
-                // 'Authorization': `token ${token_}`
+                'Authorization': `token ${token_}`
             }
         })
         .then(response => response.json())
@@ -125,8 +127,9 @@
         })
         .then((reposLanguageUrls) => {
             return reposLanguageUrls.map(url => fetch(url, {
+                credentials: 'include',
                 headers: {
-                    // 'Authorization': `token ${token_}`,
+                    'Authorization': `token ${token_}`,
                 }
             }));
         })
