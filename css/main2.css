@@ -1,0 +1,2803 @@
+@font-face {
+    font-family: 'BreePeru-Regular';
+    src: url('../fonts/BreePeru-Regular.eot#iefix') format('embedded-opentype'), url(../BreePeru-Regular.otf) format('opentype'), url(../fonts/BreePeru-Regular.woff) format('woff'), url(../fonts/BreePeru-Regular.ttf) format('truetype'), url('../fonts/BreePeru-Regular.svg#BreePeru-Regular') format('svg');
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'BreePeru-Bold';
+    src: url('../fonts/BreePeru-Bold.eot#iefix') format('embedded-opentype'), url(../BreePeru-Bold.otf) format('opentype'), url(../fonts/BreePeru-Bold.woff) format('woff'), url(../fonts/BreePeru-Bold.ttf) format('truetype'), url('../fonts/BreePeru-Bold.svg#BreePeru-Bold') format('svg');
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'BreePeru-Light';
+    src: url('../fonts/BreePeru-Light.eot#iefix') format('embedded-opentype'), url(../BreePeru-Light.otf) format('opentype'), url(../fonts/BreePeru-Light.woff) format('woff'), url(../fonts/BreePeru-Light.ttf) format('truetype'), url('../fonts/BreePeru-Light.svg#BreePeru-Light') format('svg');
+    font-weight: 400;
+    font-style: normal
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden
+}
+
+body.nomove {
+    overflow: hidden
+}
+
+::-webkit-scrollbar {
+    width: 8px
+}
+
+::-webkit-scrollbar-track {
+    -webkit-border-radius: 0;
+    border-radius: 0
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    background: rgba(154, 158, 157, .4)
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(154, 158, 157, .4)
+}
+
+div#alert-float {
+    position: fixed;
+    right: 0;
+    top: 15%;
+    width: 100%;
+    max-width: 150px;
+    z-index: 80;
+    height: 100%;
+    max-height: 150px
+}
+
+div#float {
+    position: relative;
+    z-index: 9;
+    background: rgba(150, 43, 169, .85);
+    width: auto;
+    height: auto;
+    text-align: center;
+    color: #fff;
+    font-family: 'BreePeru-light';
+    font-size: 13px;
+    padding: 18px;
+    padding-top: 25px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    line-height: 1.3
+}
+
+div#cerrar {
+    color: #FFF;
+    position: absolute;
+    z-index: 10;
+    cursor: pointer;
+    right: 10px;
+    top: 10px;
+    font-size: 15px
+}
+
+.img-alert-float {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(135, 35, 152, .9);
+    border-radius: 50px;
+    left: -15px;
+    top: -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center
+}
+
+.alert-float a {
+    color: #fff;
+    font-size: 15px
+}
+
+.slick-dots li {
+    display: inline-block;
+    width: 40px;
+    height: 6px;
+    background-color: #FFF;
+    list-style: none;
+    margin: 0 4px;
+    position: absolute;
+    top: 75%;
+    left: 10%
+}
+
+.slick-dots li:nth-child(2) {
+    left: 13.5%
+}
+
+.slick-dots li:nth-child(3) {
+    left: 17%
+}
+
+.slick-dots li:nth-child(4) {
+    left: 20.6%
+}
+
+.slick-dots li:nth-child(5) {
+    left: 24.4%
+}
+
+.slick-dots li:nth-child(6) {
+    left: 28%
+}
+
+.slick-dots li.slick-active {
+    background-color: #E7A920
+}
+
+.slick-dots button {
+    display: none
+}
+
+.slick-slide img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center
+}
+
+.destinos {
+    height: 100vh
+}
+
+.fade button.slick-anterior.slick-arrow {
+    left: 5%
+}
+
+.fade button.slick-siguiente.slick-arrow {
+    right: 5%
+}
+
+.fade button.slick-arrow {
+    display: block!important;
+    position: absolute;
+    color: #f0b127;
+    top: 50%;
+    background-color: transparent;
+    z-index: 1;
+    font-size: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer
+}
+
+.swiper-container-vertical>.swiper-pagination-bullets {
+    left: 13%!important
+}
+
+.swiper-pagination-bullet {
+    width: 12px!important;
+    height: 12px!important;
+    background: #a1a1a1!important;
+    border: 12px solid #c6c6c6;
+    margin: 30px 0!important;
+    opacity: 1!important
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1!important;
+    background: #fff!important;
+    border: 12px solid #F7B41D!important
+}
+
+.swiper-pagination {
+    list-style-type: none;
+    background: url(../images/linea-ruta.png) no-repeat;
+    background-position: 5px
+}
+
+.title-section {
+    padding-top: 10%;
+    font-size: 36px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center
+}
+
+section.modulo.detalle-ofertas-y-tours {
+    background-color: #000
+}
+
+section.modulo.detalle-ofertas-y-tours .bg-hover {
+    opacity: .6
+}
+
+.title-section.title-2 {
+    font-family: 'BreePeru-Bold'!important
+}
+
+.txt-amarillo {
+    color: #f3ae1a!important
+}
+
+.ofertas-home {
+    background-image: url(../images/bg-ofertas-cajamarca-d.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat
+}
+
+.box-oferta {
+    position: absolute;
+    display: flex;
+    padding: 6px;
+    background-color: rgba(52, 171, 160, .95);
+    min-height: 60px;
+    width: 90%;
+    margin: 0 auto;
+    border-bottom-right-radius: 20px;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    align-items: center;
+    align-content: center;
+    justify-content: space-between
+}
+
+.btns.btn-mas-ofertas {
+    text-align: center;
+    margin-top: 5%
+}
+
+.btns.btn-mas-ofertas a {
+    color: #FFF!important;
+    font-size: 18px;
+    background: rgba(242, 181, 14, 1);
+    background: -moz-linear-gradient(left, rgba(242, 181, 14, 1) 0%, rgba(236, 161, 0, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(242, 181, 14, 1)), color-stop(100%, rgba(236, 161, 0, 1)));
+    background: -webkit-linear-gradient(left, rgba(242, 181, 14, 1) 0%, rgba(236, 161, 0, 1) 100%);
+    background: -o-linear-gradient(left, rgba(242, 181, 14, 1) 0%, rgba(236, 161, 0, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(242, 181, 14, 1) 0%, rgba(236, 161, 0, 1) 100%);
+    background: linear-gradient(to right, rgba(242, 181, 14, 1) 0%, rgba(236, 161, 0, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#f2b50e', endColorstr='#eca100', GradientType=1);
+    padding: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    width: auto;
+    font-family: 'BreePeru-Regular';
+    display: initial!important;
+    text-decoration: none!important;
+    cursor: pointer
+}
+
+.bg-violeta {
+    background-color: #811063!important
+}
+
+.price-sale {
+    color: #FFF;
+    font-family: 'BreePeru-Bold';
+    font-size: 19px;
+    padding-left: 0;
+    margin-right: 10px;
+    width: 32%;
+    text-align: center
+}
+
+.ofertas-tours a {
+    margin: 0 21px;
+    position: relative
+}
+
+div#content_divDetalleOferta {
+    width: 800px
+}
+
+div#content_divOfertasRelacionadas a {
+    text-align: center;
+    width: 280px;
+    margin: 0 10px
+}
+
+.box-ruta .price-sale {
+    margin: 0 auto;
+    font-size: 17px;
+    margin-top: 12px
+}
+
+.box-ruta .desc-sale h3 {
+    font-size: 14px;
+    margin-top: 5px
+}
+
+.bg-hover {
+    position: absolute;
+    width: 100%;
+    height: 100vh
+}
+
+.title-2 {
+    position: relative
+}
+
+.ofertas-tours {
+    position: relative;
+    display: flex;
+    width: 71%;
+    margin: 0 auto;
+    margin-top: 4%;
+    justify-content: center;
+    margin-left: 15%
+}
+
+.desc-sale {
+    color: #FFF;
+    text-align: left;
+    padding-left: 10px;
+    border-left: 1px dashed;
+    width: 68%
+}
+
+.desc-sale h4 {
+    font-family: 'BreePeru-Bold';
+    margin: 4px 0
+}
+
+.ofertas-tours a:hover img {
+    opacity: .8
+}
+
+.desc-sale h3 {
+    font-family: 'BreePeru-Bold';
+    margin: 4px 0;
+    line-height: 15px;
+    font-size: 16px;
+    margin-top: 0
+}
+
+.desc-sale p {
+    margin-top: 0;
+    font-family: 'BreePeru-Light';
+    margin-bottom: 0;
+    font-size: 12px
+}
+
+.ofertas-tours a img {
+    width: 280px;
+    height: 310px
+}
+
+.caption {
+    width: 460px;
+    height: auto;
+    background: rgba(243, 174, 26, .94);
+    color: #FFF;
+    border-bottom-right-radius: 50px;
+    position: absolute;
+    bottom: 41%;
+    right: 10.2%;
+    left: 10.2%;
+    z-index: 1
+}
+
+.caption.caption-universitarios {
+    background: transparent
+}
+
+.caption.caption-universitarios img {
+    width: 350px;
+    height: auto;
+    position: absolute;
+    margin-top: -33%;
+    margin-left: -18px
+}
+
+.caption.caption-universitarios .titulo {
+    position: relative;
+    width: 55%;
+    font-size: 15px;
+    text-align: center;
+    margin: 0 auto;
+    margin-left: 6%;
+    margin-top: 0
+}
+
+.next-section.next-home {
+    display: block;
+    position: absolute;
+    z-index: 999999;
+    bottom: 30px;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center
+}
+
+.cinta-oferta {
+    position: absolute;
+    z-index: 3;
+    top: 10px;
+    font-size: 15px;
+    padding: 5px 8px;
+    color: #FFF;
+    font-family: 'BreePeru-Regular';
+    right: 0;
+    background: rgba(242, 181, 14, 1);
+    background: -moz-linear-gradient(left, rgba(242, 181, 14, 1) 0%, rgba(236, 161, 0, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(242, 181, 14, 1)), color-stop(100%, rgba(236, 161, 0, 1)));
+    background: -webkit-linear-gradient(left, rgba(242, 181, 14, 1) 0%, rgba(236, 161, 0, 1) 100%);
+    background: -o-linear-gradient(left, rgba(242, 181, 14, 1) 0%, rgba(236, 161, 0, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(242, 181, 14, 1) 0%, rgba(236, 161, 0, 1) 100%);
+    background: linear-gradient(to right, rgba(242, 181, 14, 1) 0%, rgba(236, 161, 0, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#f2b50e', endColorstr='#eca100', GradientType=1)
+}
+
+ul.redes.redes-top a img,
+ul.redes.redes-down a img {
+    width: 30px;
+    height: 30px;
+    margin: 3px
+}
+
+.text-suscribe p {
+    margin: 0
+}
+
+.btn-suscribe a {
+    background: rgba(242, 181, 14, 1);
+    background: -moz-linear-gradient(left, rgba(242, 181, 14, 1) 0%, rgba(236, 161, 0, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(242, 181, 14, 1)), color-stop(100%, rgba(236, 161, 0, 1)));
+    background: -webkit-linear-gradient(left, rgba(242, 181, 14, 1) 0%, rgba(236, 161, 0, 1) 100%);
+    background: -o-linear-gradient(left, rgba(242, 181, 14, 1) 0%, rgba(236, 161, 0, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(242, 181, 14, 1) 0%, rgba(236, 161, 0, 1) 100%);
+    background: linear-gradient(to right, rgba(242, 181, 14, 1) 0%, rgba(236, 161, 0, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#f2b50e', endColorstr='#eca100', GradientType=1);
+    text-align: center;
+    display: inline-block;
+    font-family: 'BreePeru-light';
+    border-bottom-right-radius: 12px;
+    border-top-left-radius: 12px;
+    margin: 10px auto;
+    padding: 5px 15px
+}
+
+div#aviso-legal {
+    max-width: 600px;
+    height: auto;
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 12px
+}
+
+.aviso-legal-content {
+    font-family: 'BreePeru-Light';
+    text-align: justify;
+    padding: 15px
+}
+
+.aviso-legal-content h2 {
+    text-align: center;
+    font-family: 'BreePeru-Bold';
+    font-size: 29px;
+    color: #f5b21b
+}
+
+section#spotify-ytqp img,
+section#spotify-ytqp picture {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    min-height: 460px;
+    height: 100%
+}
+
+section#spotify-ytqp {
+    position: relative;
+    height: 460px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    width: 100%
+}
+
+.spotify-content {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center
+}
+
+.title-spotify {
+    display: flex;
+    flex-wrap: wrap;
+    color: #FFF;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-family: 'BreePeru-Light';
+    max-width: 600px
+}
+
+.title-spotify h2 {
+    font-family: 'BreePeru-Bold';
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    font-size: 38px
+}
+
+.title-spotify p {
+    width: 100%;
+    text-align: center;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 35px
+}
+
+.title-spotify a {
+    display: inline-block;
+    background: linear-gradient(to right, rgba(242, 181, 14, 1) 0%, rgba(236, 161, 0, 1) 100%);
+    color: #FFF;
+    padding: 10px 15px;
+    border-top-left-radius: 12px;
+    border-bottom-right-radius: 12px
+}
+
+.iframe-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    min-width: 600px
+}
+
+@media (min-width:320px) and (max-width:768px) {
+    span.span-ilo {
+        top: 33%!important;
+        right: 5%!important;
+        font-size: 13px!important
+    }
+    section#spotify-ytqp img {
+        min-height: 100vh
+    }
+    section#spotify-ytqp {
+        height: 100vh;
+        min-height: 100vh
+    }
+    .spotify-content {
+        left: 5%;
+        width: 90%;
+        height: 100%
+    }
+    .title-spotify {
+        width: 100%
+    }
+    .title-spotify h2 {
+        width: 90%;
+        font-size: 33px
+    }
+    .title-spotify p {
+        font-size: 17px;
+        margin-bottom: 25px
+    }
+    .iframe-list {
+        width: 100%;
+        min-width: 100%;
+        margin-top: 25px
+    }
+    .iframe-list iframe {
+        height: 335px
+    }
+    .cinta-oferta {
+        right: 0
+    }
+    .viajero-bq-tres {
+        float: none!important;
+        width: 100%!important;
+        background: #2f9a90;
+        border-top: 1px solid rgba(255, 255, 255, .5);
+        padding: 20px 35px;
+        height: auto!important
+    }
+    .info-iperu a img {
+        width: 85%!important;
+        margin-top: 8px
+    }
+    .peru-travel p {
+        font-size: 16px!important
+    }
+    .viajero-bq-tres img {
+        width: 90px!important
+    }
+    .peru-travel {
+        text-align: center!important
+    }
+    .next-section.next-home {
+        position: absolute;
+        z-index: 99;
+        bottom: 20px;
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+        display: block
+    }
+    .caption.caption-universitarios img {
+        width: 300px;
+        height: auto;
+        position: absolute;
+        margin-top: -31%;
+        margin-left: -18px
+    }
+    .caption.caption-universitarios .titulo {
+        position: relative;
+        width: 80%;
+        font-size: 13px;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 17%;
+        margin-left: 7%
+    }
+    .caption.caption-universitarios .titulo span {
+        font-size: 16px;
+        line-height: 26px;
+        display: block;
+        padding-top: 20px
+    }
+}
+
+@media only screen and (min-device-width:768px) and (max-device-width:1024px) {
+    .caption.caption-universitarios .titulo {
+        position: relative;
+        width: 63%;
+        font-size: 14px;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 6%;
+        margin-left: 7%
+    }
+}
+
+@media only screen and (min-device-width:1080px) and (max-device-width:1920px) and (orientation:portrait) {
+    .caption.caption-universitarios .titulo {
+        position: relative;
+        width: 43%;
+        font-size: 14px;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: -17px;
+        margin-left: 7%
+    }
+    ul.redes.redes-top {
+        margin: 0 auto;
+        margin-left: 8px
+    }
+}
+
+.caption.caption-universitarios .titulo span {
+    font-size: 20px;
+    line-height: 26px;
+    display: block;
+    padding-top: 20px
+}
+
+.titulo {
+    font-family: 'BreePeru-Light';
+    font-size: 35px;
+    text-align: left;
+    margin-left: 30px;
+    margin-right: 30px;
+    line-height: 1.2;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px 0
+}
+
+.titulo .asterico {
+    display: inline-block;
+    font-size: 25px;
+    padding-top: 0;
+    line-height: 0;
+    margin: 0;
+    padding: 0;
+    margin-left: -4px
+}
+
+.titulo .txt-asterico {
+    font-size: 15px;
+    line-height: 26px;
+    display: block;
+    padding-top: 17px
+}
+
+.titulo span {
+    font-size: 20px;
+    line-height: 26px;
+    display: block;
+    padding-top: 5px
+}
+
+a {
+    text-decoration: none!important
+}
+
+a .titulo {
+    color: #FFF
+}
+
+.titulo b {
+    font-family: 'BreePeru-Regular'
+}
+
+.title-small {
+    text-align: left;
+    font-family: 'BreePeru-Light';
+    padding-left: 30px;
+    font-size: 20px;
+    margin: 15px 0
+}
+
+.call {
+    color: #FFF;
+    text-decoration: none;
+    font-family: 'BreePeru-Regular';
+    font-size: 20px
+}
+
+a.call:focus,
+a.call:hover {
+    color: #FFF;
+    text-decoration: none
+}
+
+ul,
+ol {
+    list-style: none
+}
+
+.content-ofertas {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    position: relative
+}
+
+.slider-vertical {
+    width: 100%;
+    height: 100vh;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    overflow: hidden;
+    position: relative
+}
+
+.slider-vertical .slides {
+    width: 100%;
+    height: 100%
+}
+
+.slider-vertical .slides {
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.slider-vertical .slides .oferta-cinco {
+    background-image: url(../images/bn-complejo-wari_d.jpg);
+    background-size: 100vw 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh
+}
+
+.slider-vertical .slides .oferta-cuatro {
+    background-image: url(../images/bn-laguna_yaranicocha_d.jpg);
+    background-size: 100vw 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh
+}
+
+.slider-vertical .slides .oferta-seis {
+    background-image: url(../images/bn-isla-de-monos_d.jpg);
+    background-size: 100vw 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh
+}
+
+.slider-vertical ol {
+    position: absolute;
+    left: 8%;
+    top: 50%;
+    padding-right: 15px;
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    transform: translate(0, -50%)
+}
+
+.slider-vertical ol li {
+    width: 36px;
+    height: 36px;
+    margin-bottom: 35px;
+    background: #a1a1a1;
+    cursor: pointer;
+    margin-top: 30px;
+    border-radius: 50%;
+    border: 12px solid #c6c6c6;
+    box-sizing: border-box
+}
+
+.slider-vertical ol li:hover,
+.slider-vertical ol li.active {
+    background: #FFF;
+    border: 12px solid #F7B41D
+}
+
+.slider-vertical ol {
+    list-style-type: none;
+    background: url(../images/linea-ruta.png) no-repeat;
+    background-position: 45px
+}
+
+.contenedor-oferta {
+    width: 74%;
+    height: 60%;
+    position: relative;
+    left: 20%;
+    top: 22%
+}
+
+.titulo-oferta {
+    font-family: 'BreePeru-Bold';
+    font-size: 37px;
+    color: #fff;
+    line-height: .9;
+    margin-top: 0;
+    text-shadow: 1px 2px 6px rgba(0, 0, 0, .6)
+}
+
+.titulo-oferta span {
+    font-family: 'BreePeru-Light';
+    font-size: 25px
+}
+
+.texto-oferta {
+    font-family: 'BreePeru-Light';
+    font-size: 16px;
+    color: #FFF;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
+    line-height: 1.3;
+    margin-top: 15px;
+    padding-bottom: 5px
+}
+
+.btn-conocemas {
+    background-color: rgba(243, 174, 26, 1);
+    width: 130px;
+    height: 40px;
+    text-align: center;
+    padding-top: 11px;
+    font-family: 'BreePeru-Regular';
+    font-size: 18px;
+    border-bottom-right-radius: 12px;
+    border-top-left-radius: 12px;
+    margin-top: 15px;
+    box-sizing: border-box
+}
+
+.btn-conocemas a {
+    color: #FFF;
+    text-decoration: none
+}
+
+.description-oferta {
+    width: 42%;
+    float: left;
+    padding: 0 40px 40px 40px;
+    text-align: left
+}
+
+.oferta-content {
+    width: 41%;
+    float: right;
+    border-left: 2px dashed rgba(255, 255, 255, .5);
+    height: 46.202%;
+    padding: 0 40px 40px 40px;
+    text-align: left
+}
+
+.info-oferta {
+    overflow: hidden;
+    height: 25%
+}
+
+.info-oferta button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px
+}
+
+.info-oferta button:hover {
+    background-color: #ddd
+}
+
+.info-oferta button.active {
+    background-color: #ccc
+}
+
+.info-oferta-content {
+    display: none;
+    padding: 6px 0;
+    border-top: none;
+    height: 100px
+}
+
+.info-oferta-content2 {
+    display: none
+}
+
+button.tablinks.ubiico {
+    background-image: url(../images/ubicacion-sprite.png);
+    background-repeat: no-repeat;
+    width: 36px;
+    height: 32px;
+    background-position: 0 -32px;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    margin-right: 15px
+}
+
+button.tablinks.queico {
+    background-image: url(../images/quehacer-sprite.png);
+    background-repeat: no-repeat;
+    width: 36px;
+    height: 32px;
+    background-position: 0 -32px;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    margin-right: 15px
+}
+
+button.tablinks.salesico {
+    background-image: url(../images/oferta-sprite.png);
+    background-repeat: no-repeat;
+    width: 36px;
+    height: 32px;
+    background-position: 0 -32px;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    margin-right: 15px
+}
+
+button.tablinks.ubiico:hover,
+button.tablinks.ubiico:focus,
+button.tablinks.ubiico:active {
+    background-image: url(../images/ubicacion-sprite.png);
+    background-repeat: no-repeat;
+    width: 36px;
+    height: 32px;
+    background-position: 0 1px;
+    margin-right: 15px
+}
+
+button.tablinks.queico:hover,
+button.tablinks.queico:focus,
+button.tablinks.queico:active {
+    background-image: url(../images/quehacer-sprite.png);
+    background-repeat: no-repeat;
+    width: 36px;
+    height: 32px;
+    background-position: 0 1px;
+    margin-right: 15px
+}
+
+button.tablinks.salesico:hover,
+button.tablinks.salesico:focus,
+button.tablinks.salesico:active {
+    background-image: url(../images/oferta-sprite.png);
+    background-repeat: no-repeat;
+    width: 36px;
+    height: 32px;
+    background-position: 0 1px;
+    margin-right: 15px
+}
+
+button.tablinks.ubiico.active {
+    background-image: url(../images/ubicacion-sprite.png);
+    background-repeat: no-repeat;
+    width: 36px;
+    height: 32px;
+    background-position: 0 1px;
+    margin-right: 15px
+}
+
+button.tablinks.queico.active {
+    background-image: url(../images/quehacer-sprite.png);
+    background-repeat: no-repeat;
+    width: 36px;
+    height: 32px;
+    background-position: 0 1px;
+    margin-right: 15px
+}
+
+button.tablinks.salesico.active {
+    background-image: url(../images/oferta-sprite.png);
+    background-repeat: no-repeat;
+    width: 36px;
+    height: 32px;
+    background-position: 0 1px;
+    margin-right: 15px
+}
+
+button.tablinks.ubiico2 {
+    background-image: url(../images/ubicacion-sprite-2.png);
+    background-repeat: no-repeat;
+    width: 42px;
+    height: 42px;
+    background-position: 0 0;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    margin-right: 40px
+}
+
+button.tablinks.queico2 {
+    background-image: url(../images/quehacer-sprite-2.png);
+    background-repeat: no-repeat;
+    width: 42px;
+    height: 42px;
+    background-position: 0 0;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    margin-right: 40px
+}
+
+button.tablinks.salesico2 {
+    background-image: url(../images/oferta-sprite-2.png);
+    background-repeat: no-repeat;
+    width: 42px;
+    height: 42px;
+    background-position: 0 0;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    margin-right: 40px
+}
+
+button.tablinks.ubiico2:hover,
+button.tablinks.ubiico2:focus,
+button.tablinks.ubiico2:active {
+    background-image: url(../images/ubicacion-sprite-2.png);
+    background-repeat: no-repeat;
+    width: 42px;
+    height: 42px;
+    background-position: -41px 0;
+    margin-right: 40px
+}
+
+button.tablinks.queico2:hover,
+button.tablinks.queico2:focus,
+button.tablinks.queico2:active {
+    background-image: url(../images/quehacer-sprite-2.png);
+    background-repeat: no-repeat;
+    width: 42px;
+    height: 42px;
+    background-position: -41px 0;
+    margin-right: 40px
+}
+
+button.tablinks.salesico2:hover,
+button.tablinks.salesico2:focus,
+button.tablinks.salesico2:active {
+    background-image: url(../images/oferta-sprite-2.png);
+    background-repeat: no-repeat;
+    width: 42px;
+    height: 42px;
+    background-position: -41px 0;
+    margin-right: 40px
+}
+
+button.tablinks.ubiico2.active {
+    background-image: url(../images/ubicacion-sprite-2.png);
+    background-repeat: no-repeat;
+    width: 42px;
+    height: 42PX;
+    background-position: -41px 0;
+    margin-right: 40px
+}
+
+button.tablinks.queico2.active {
+    background-image: url(../images/quehacer-sprite-2.png);
+    background-repeat: no-repeat;
+    width: 42px;
+    height: 42PX;
+    background-position: -41px 0;
+    margin-right: 40px
+}
+
+button.tablinks.salesico2.active {
+    background-image: url(../images/oferta-sprite-2.png);
+    width: 42px;
+    height: 42PX;
+    background-position: -41px 0;
+    margin-right: 40px
+}
+
+.info {
+    font-family: 'BreePeru-Regular';
+    color: #FFF;
+    font-size: 16px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .6)
+}
+
+.info-text {
+    font-size: 14px;
+    text-align: justify;
+    color: #FFF;
+    font-family: 'BreePeru-Light';
+    font-style: italic;
+    margin-top: 10px;
+    width: 70%;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .6)
+}
+
+.info-text a,
+.info-text a:hover {
+    color: #FFF;
+    text-decoration: underline!important;
+    font-weight: 700
+}
+
+.planificador {
+    background-image: url(../images/que-hacer.jpg);
+    background-size: 100vw 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%
+}
+
+.planificador-desktop {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 3%;
+    height: auto
+}
+
+.titulo-planificador {
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    font-family: 'BreePeru-Bold';
+    font-size: 45px;
+    padding-top: 155px
+}
+
+.subtitulo-planificador {
+    font-family: 'BreePeru-Light';
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 25px
+}
+
+.zona {
+    width: 450px;
+    float: left;
+    text-align: center;
+    background: #84c131;
+    border-bottom-right-radius: 50px;
+    padding: 0 7px 7px 13px;
+    box-sizing: border-box
+}
+
+.title-plan {
+    font-family: 'BreePeru-Bold';
+    color: #FFF;
+    font-size: 28px;
+    padding-top: 8px
+}
+
+.linea-planifica {
+    height: 2px;
+    background: #91c746
+}
+
+div#content-centro,
+div#content-norte,
+div#content-sur {
+    margin-top: 14px
+}
+
+.regiones {
+    height: 173px;
+    max-width: 132px;
+    margin: 0 auto;
+    width: 33.333%;
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    box-sizing: border-box
+}
+
+.title-cntn-hover {
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, .5);
+    font-family: 'BreePeru-Regular'
+}
+
+.title-cntn {
+    text-transform: uppercase;
+    color: #FFF;
+    font-family: 'BreePeru-Bold'
+}
+
+.sites {
+    color: #FFF;
+    font-family: 'BreePeru-light';
+    font-size: 12px;
+    margin-top: 10px
+}
+
+.hover-cambio div#hover-norte,
+.hover-cambio div#hover-centro,
+.hover-cambio div#hover-sur {
+    position: absolute;
+    background: #7db72f;
+    width: 132px;
+    height: 173px;
+    margin: 0 auto;
+    margin-left: -16px;
+    margin-top: -1px;
+    opacity: 1
+}
+
+.hover-cambio {
+    display: block;
+    opacity: 1;
+    box-sizing: border-box
+}
+
+.hover-cambio.boton-activo {
+    opacity: 0
+}
+
+a.hover-cambio:target,
+a.hover-cambio:active,
+a.hover-cambio:focus,
+a.hover-cambio:hover {
+    opacity: 0
+}
+
+div#hover-norte img,
+div#hover-centro img,
+div#hover-sur img {
+    margin-top: 40px;
+    margin-bottom: 10px
+}
+
+.actividad {
+    width: 450px;
+    float: right;
+    text-align: center;
+    background: #84c131;
+    border-bottom-right-radius: 50px;
+    padding: 0 7px 7px 13px;
+    box-sizing: border-box
+}
+
+.actividades {
+    max-width: 130px!important;
+    height: 92px;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    float: left;
+    top: 10px;
+    margin-right: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    left: 0%;
+    box-sizing: border-box
+}
+
+div#hover-aventura,
+div#hover-naturaleza,
+div#hover-historia,
+div#hover-relax,
+div#hover-fiestas,
+div#hover-turismo {
+    width: 123px;
+    height: 80px;
+    background: #7db72f;
+    position: absolute;
+    margin-left: -2px;
+    margin-top: -1px;
+    opacity: 1;
+    padding-top: 10px;
+    font-family: 'BreePeru-Light';
+    color: rgba(255, 255, 255, .5);
+    box-sizing: border-box
+}
+
+div#content-aventura,
+div#content-naturaleza,
+div#content-historia,
+div#content-relax,
+div#content-fiestas,
+div#content-turismo {
+    padding-top: 10px;
+    font-family: 'BreePeru-Regular';
+    color: #fff
+}
+
+.title-plan-hover {
+    font-size: 12px
+}
+
+.title-plan-uno {
+    font-size: 12px
+}
+
+.planifica-btn {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center
+}
+
+.planifica-btn a,
+.planifica-btn a:hover,
+.planifica-btn a:focus {
+    text-decoration: none;
+    color: #FFF;
+    display: inline-block;
+    background: -webkit-linear-gradient(left, rgba(242, 181, 14, 1) 0%, rgba(236, 161, 0, 1) 100%);
+    background: -o-linear-gradient(left, rgba(242, 181, 14, 1) 0%, rgba(236, 161, 0, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(242, 181, 14, 1) 0%, rgba(236, 161, 0, 1) 100%);
+    background: linear-gradient(to right, rgba(242, 181, 14, 1) 0%, rgba(236, 161, 0, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#f2b50e', endColorstr='#eca100', GradientType=1);
+    text-align: center;
+    color: #FFF;
+    font-family: 'BreePeru-Regular';
+    border-bottom-right-radius: 12px;
+    border-top-left-radius: 12px;
+    padding: 7px 25px;
+    font-size: 18px;
+    width: auto;
+    margin: 30px auto
+}
+
+.planifica-btn a,
+.planifica-btn a:hover,
+.planifica-btn a:focus {
+    text-decoration: none;
+    color: #FFF
+}
+
+.descubre {
+    background-image: url(../images/bg-detalle-oferta-d.jpg);
+    background-size: 100vw 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%
+}
+
+.titulo-descubre {
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    font-family: 'BreePeru-Bold';
+    font-size: 45px;
+    padding-top: 135px;
+    text-shadow: -2px 0 0 rgba(0, 0, 0, .2)
+}
+
+.contenedor-destinos {
+    max-width: 100%;
+    width: auto;
+    max-height: 407px;
+    height: 100%;
+    position: relative;
+    margin: 0 auto
+}
+
+.activado {
+    opacity: 1;
+    top: 0em;
+    -webkit-transition: opacity 1s ease-out;
+    -moz-transition: opacity 1s ease-out;
+    -ms-transition: opacity 1s ease-out;
+    -o-transition: opacity 1s ease-out;
+    transition: opacity 1s ease-out
+}
+
+.noti-dos {
+    max-width: 100%;
+    padding-left: 14%
+}
+
+.bqs {
+    margin-left: 3px;
+    float: left
+}
+
+.info-dos {
+    background: rgba(15, 118, 182, .9)!important
+}
+
+.info-tres {
+    background: rgba(130, 26, 93, .9)!important
+}
+
+.info-dos2 {
+    background: rgba(15, 118, 182, .9)!important
+}
+
+.info-tres2 {
+    background: rgba(130, 26, 93, .9)!important
+}
+
+.conoce-tres {
+    background: #f3ae1a!important
+}
+
+.box_2 .full_text {
+    padding-top: 15px;
+    text-align: justify;
+    color: #FFF;
+    font-family: 'BreePeru-light';
+    font-size: 17px;
+    text-shadow: -1px 0 rgba(0, 0, 0, .3)
+}
+
+.blq-uno {
+    background: url(../images/novedad-20-lugares-de-lima.jpg) center;
+    background-repeat: no-repeat;
+    background-size: auto 100%
+}
+
+.bq-dos {
+    background: url(../images/novedad-cusco-pocos-dias.jpg);
+    background-position: -46px;
+    background-repeat: no-repeat;
+    background-size: auto 100%
+}
+
+.bq-tres {
+    background: url(../images/novedad-tacacho-con-cecina.jpg) center;
+    background-position: -46px;
+    background-repeat: no-repeat;
+    background-size: auto 100%
+}
+
+.block {
+    width: 322px;
+    height: 407px;
+    margin: 0 auto;
+    display: table-cell;
+    text-align: center;
+    vertical-align: bottom;
+    cursor: pointer;
+    -webkit-transition: width 1s, height 1s, margin 1s;
+    -moz-transition: width 1s, height 1s, margin 1s;
+    -ms-transition: width 1s, height 1s, margin 1s;
+    transition: width 1s, height 1s, margin 1s
+}
+
+.destinos-desktop {
+    display: block;
+    top: 4%
+}
+
+.contenedor-destinos {
+    max-width: 100%;
+    width: auto;
+    max-height: 407px;
+    height: 100%;
+    position: relative;
+    margin: 0 auto
+}
+
+.contenedor-destinos.destinos-mobile {
+    display: none
+}
+
+.contenedor {
+    width: 100%;
+    height: 407px;
+    text-align: center;
+    display: flex;
+    margin: 0 auto;
+    max-width: 1100px;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between
+}
+
+.novedades-hm {
+    width: 30%;
+    height: 407px!important;
+    background-color: #666;
+    transition: all .3s ease-in;
+    margin: 0 auto;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+        margin-right: 3%;
+}
+
+.novedades-hm:first-child {
+    background-image: url(../images/ytqp_novedades_home_familia.png)
+}
+
+.novedades-hm:nth-last-child(2) {
+    background-image: url(../images/ytqp_novedades_home_pareja.png)
+}
+
+.novedades-hm:last-child {
+    background-image: url(../images/ytqp_novedades_home_semanasanta.png)
+}
+
+.hover-novedad {
+    position: absolute;
+    opacity: 0;
+    width: 90%;
+    height: 90%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center
+}
+
+.novedades-hm .titulo-novedad {
+    position: absolute;
+    bottom: 5%;
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom-right-radius: 25px;
+    padding: 5px;
+    min-height: 75px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    opacity: 1
+}
+
+.novedades-hm:first-child .titulo-novedad {
+    background-color: rgba(243, 174, 26, .9)
+}
+
+.novedades-hm:nth-last-child(2) .titulo-novedad {
+    background-color: rgba(15, 118, 182, .9)
+}
+
+.novedades-hm:last-child .titulo-novedad {
+    background-color: rgba(130, 26, 93, .9)
+}
+
+.novedades-hm .titulo-novedad p {
+    color: #FFF;
+    font-family: 'BreePeru-Light';
+    font-size: 17px;
+    font-weight: 600;
+    margin: 0 auto;
+    width: 95%
+}
+
+.novedades-hm:hover .titulo-novedad {
+    opacity: 0
+}
+
+.novedades-hm:hover .hover-novedad {
+    opacity: 1;
+    color: #FFF;
+    font-family: 'BreePeru-Light';
+    font-size: 17px
+}
+
+.hover-novedad a {
+    display: inline-block;
+    color: #FFF;
+    padding: 5px 20px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: rgba(243, 174, 26, .9)
+}
+
+.novedades-hm:first-child:hover .hover-novedad a {
+    background-color: rgba(130, 26, 93, .9)
+}
+
+.hover-novedad p {
+    width: 90%;
+    margin: 20px auto
+}
+
+.novedades-hm:first-child:hover .hover-novedad {
+    background-color: rgba(243, 174, 26, .9)
+}
+
+.novedades-hm:nth-last-child(2):hover .hover-novedad {
+    background-color: rgba(15, 118, 182, .9)
+}
+
+.novedades-hm:last-child:hover .hover-novedad {
+    background-color: rgba(130, 26, 93, .9)
+}
+
+.infos {
+    position: relative;
+    display: inline-block;
+    vertical-align: bottom;
+    background-color: #f3ae1a;
+    margin-bottom: 0;
+    border-bottom-right-radius: 0;
+    -webkit-transform: scale(.01);
+    transform: scale(.1);
+    opacity: .9;
+    -webkit-transition: all 300ms linear;
+    -moz-transition: all 300ms linear;
+    -ms-transition: all 300ms linear;
+    -o-transition: all 300ms linear;
+    transition: all 300ms linear
+}
+
+.activado {
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1)
+}
+
+.aplicar_efecto {
+    -moz-opacity: 0;
+    opacity: 0;
+    -moz-transform: scale(.01);
+    -webkit-transform: scale(.01);
+    -o-transform: scale(.01);
+    -ms-transform: scale(.01);
+    transform: scale(.01)
+}
+
+.box_2 {
+    margin-top: 30px;
+    width: 85%
+}
+
+.box_2 .text {
+    padding: 10px 28px;
+    text-align: left;
+    height: 340px
+}
+
+.box_custom_2.box_2 .full_text {
+    padding-top: 55px
+}
+
+.box_custom_3.box_2 .full_text {
+    padding-top: 70px
+}
+
+.box_custom_5.box_2 .full_text {
+    padding-top: 65px
+}
+
+.box_2 .full_text {
+    text-align: justify
+}
+
+.box_1 {
+    width: 278px;
+    height: 105px;
+    margin: 0 auto;
+    border-bottom-right-radius: 50px
+}
+
+.info2.info-uno.box_top1.box_1.box_custom_1.info-uno {
+    position: relative;
+    vertical-align: bottom;
+    background-color: rgba(243, 174, 26, .9);
+    top: 68%
+}
+
+.box_1 .text {
+    padding-top: 15px;
+    text-align: left
+}
+
+.info h2 {
+    font-family: 'BreePeru-Bold';
+    color: #FFF;
+    font-size: 18px
+}
+
+.info p {
+    color: #FFF;
+    font-family: 'BreePeru-light';
+    font-size: 17px
+}
+
+.infos .conocelos {
+    border-bottom-right-radius: 12px;
+    border-top-left-radius: 12px;
+    background-color: #0070b6;
+    opacity: 1;
+    color: #FFF;
+    padding: 10px;
+    display: block;
+    width: 62%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'BreePeru-Bold';
+    text-decoration: none;
+    position: absolute;
+    left: 15%
+}
+
+.conocelos a {
+    text-decoration: none;
+    color: #FFF
+}
+
+.conocelos:hover {
+    color: #FFF;
+    text-decoration: none
+}
+
+.icon-link {
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    width: 50px
+}
+
+.icon-link img {
+    width: 100%;
+    vertical-align: top
+}
+
+.icon-link--twitter {
+    left: auto;
+    right: 5px
+}
+
+.noti-dos .bqs {
+    display: inline;
+    width: 100%
+}
+
+.seccion-top {
+    background: #34aba0;
+    color: #FFF;
+    margin: 0;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    box-sizing: border-box
+}
+
+.seccion-top a {
+    color: #FFF;
+    text-decoration: none;
+    font-family: 'BreePeru-Light';
+    font-size: 14px
+}
+
+.num-iperu {
+    display: block;
+    font-family: 'BreePeru-Regular';
+    font-size: 14px;
+    text-align: right;
+    margin-top: 5px
+}
+
+.tlf-fijo {
+    vertical-align: text-top
+}
+
+.num-iperu span {
+    display: block
+}
+
+.num-iperu span img {
+    width: 14px!important;
+    vertical-align: bottom
+}
+
+.msj-nvd {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 9999999;
+    background-color: rgba(0, 0, 0, .8);
+    top: 0;
+    left: 0
+}
+
+.llama {
+    position: absolute;
+    bottom: 15%;
+    transition: all 1s ease-in;
+    transform: translate(-100%);
+    animation-iteration-count: initial;
+    animation-name: entraLlama;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-delay: .3s;
+    animation-fill-mode: forwards
+}
+
+@keyframes entraLlama {
+    0% {
+        transform: translate(-100%)
+    }
+    100% {
+        transform: translate(0%)
+    }
+}
+
+.msj-txt {
+    position: absolute;
+    left: 130px;
+    top: 20%;
+    padding-top: 15px;
+    min-width: 304px;
+    min-height: 188px;
+    box-sizing: border-box;
+    color: #FFF;
+    font-family: 'BreePeru-Light';
+    transition: all ease-in;
+    opacity: 0;
+    background-image: url(../images/texto-ovalo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    animation-name: entraMsj;
+    animation-duration: .8s;
+    animation-timing-function: ease-in;
+    animation-delay: 2s;
+    animation-iteration-count: initial;
+    animation-fill-mode: forwards
+}
+
+.msj-txt.msj-region {
+    position: absolute;
+    left: 130px;
+    top: 20%;
+    min-width: 304px;
+    max-width: 350px;
+    padding: 55px 48px;
+    padding-top: 65px;
+    box-sizing: border-box;
+    min-height: 188px;
+    color: #FFF;
+    font-family: 'BreePeru-Light';
+    transition: all ease-in;
+    opacity: 0;
+    background-image: url(../images/texto-ovalo.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    font-size: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    animation-name: entraMsj;
+    animation-duration: .8s;
+    animation-timing-function: ease-in;
+    animation-delay: 2s;
+    animation-iteration-count: initial;
+    animation-fill-mode: forwards
+}
+
+@keyframes entraMsj {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+.msj-txt a {
+    color: #FFF;
+    font-family: 'BreePeru-Light';
+    text-decoration: none
+}
+
+.msj-txt a span {
+    font-family: 'BreePeru-Bold';
+    font-size: 17px;
+    text-decoration: underline;
+    line-height: 25px
+}
+
+.close-msj {
+    position: absolute;
+    top: 20%;
+    left: 420px;
+    opacity: 0;
+    cursor: pointer;
+    animation-name: entraMsj;
+    animation-duration: .8s;
+    animation-timing-function: ease-in;
+    animation-delay: 2.5s;
+    animation-iteration-count: initial;
+    animation-fill-mode: forwards;
+    z-index: 999
+}
+
+.close-msj.close-regiones {
+    position: absolute;
+    top: 15%;
+    left: 420px;
+    opacity: 0;
+    cursor: pointer;
+    animation-name: entraMsj;
+    animation-duration: .8s;
+    animation-timing-function: ease-in;
+    animation-delay: 2.5s;
+    animation-iteration-count: initial;
+    animation-fill-mode: forwards;
+    z-index: 999
+}
+
+@keyframes entraMsj {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+.close-msj a {
+    color: #FFF;
+    font-size: 25px
+}
+
+.caption.caption-navidad {
+    background-image: url(../images/pompones_texto.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+    padding-top: 30px
+}
+
+@media (max-width:768px) and (min-width:320px) {
+    .llama img {
+        width: 65%
+    }
+    .llama {
+        position: absolute;
+        bottom: 25%
+    }
+    .msj-txt {
+        position: absolute;
+        left: 85px;
+        top: 25%;
+        min-width: 190px;
+        min-height: 188px;
+        font-size: 12px;
+        padding: 20px;
+        background-size: 100%
+    }
+    .close-msj {
+        position: absolute;
+        top: 30%;
+        left: 80%
+    }
+    .msj-txt.msj-region {
+        position: absolute;
+        left: 85px;
+        top: 25%;
+        min-width: 188px;
+        max-width: 350px;
+        padding: 60px 32px;
+        padding-top: 65px;
+        box-sizing: border-box;
+        min-height: 188px;
+        color: #FFF;
+        font-family: 'BreePeru-Light';
+        transition: all ease-in;
+        opacity: 0;
+        background-image: url(../images/texto-ovalo.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        font-size: 13px
+    }
+    .close-msj.close-regiones {
+        position: absolute;
+        top: 20%;
+        left: 85%
+    }
+    .num-iperu span a img {
+        width: 14px!important;
+        vertical-align: bottom
+    }
+    .lista-info-viajero ul p {
+        color: #FFF;
+        text-decoration: none;
+        font-family: 'BreePeru-Regular';
+        font-size: 16px;
+        margin-top: 0
+    }
+    .lista-info-viajero ul img {
+        width: 85%!important;
+        margin-top: -12px
+    }
+    .info-iperu a img {
+        width: 85%!important;
+        margin-top: 8px
+    }
+    .num-iperu img.tlf-fijo {
+        width: 14px!important;
+        vertical-align: initial;
+        margin-top: 0;
+        margin-bottom: -2px
+    }
+    .info-iperu p {
+        font-size: 15px!important;
+        margin-top: 16px!important;
+        margin-left: 0
+    }
+    img.iperu {
+        width: 30%;
+        margin-top: -10px
+    }
+    div#lista-viajero ul p a {
+        font-family: 'BreePeru-Regular';
+        font-size: 16px
+    }
+}
+
+.info-viajero {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start
+}
+
+.info-viajero li {
+    list-style: initial
+}
+
+.viajero-bq-uno {
+    width: 40%;
+    box-sizing: border-box;
+    padding: 10px 0
+}
+
+.viajero-bq-uno p {
+    font-family: 'BreePeru-Regular';
+    margin-left: 8%;
+    font-size: 15px;
+    margin-top: 0
+}
+
+.viajero-bq-uno ul {
+    margin: 0
+}
+
+.viajero-bq-tres {
+    width: 15%;
+    height: 140px;
+    box-sizing: border-box;
+    padding: 10px 0
+}
+
+.iperu-content p {
+    font-family: 'BreePeru-Regular';
+    margin-left: 0;
+    font-size: 15px;
+    margin: 0 auto;
+    margin-bottom: 15px
+}
+
+.info-iperu a img {
+    width: 80%;
+    margin-top: 8px
+}
+
+.info-iperu p {
+    font-size: 15px;
+    margin-top: 12px;
+    margin-left: 0
+}
+
+.iperu-content .bajada {
+    font-family: 'BreePeru-Light';
+    font-size: 14px
+}
+
+.info-iperu p span {
+    margin-left: 40px;
+    font-size: 16px
+}
+
+.info-iperu {
+    display: flex
+}
+
+.viajero-bq-dos {
+    width: 40%;
+    margin-left: 4%;
+    box-sizing: border-box;
+    padding: 10px 0
+}
+
+.viajero-bq-dos li {
+    list-style: none
+}
+
+.viajero-bq-dos ul {
+    margin-top: 0
+}
+
+.viajero-bq-dos ul li {
+    list-style: none
+}
+
+.encuentranos {
+    width: 25%;
+    height: 169px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    box-sizing: border-box;
+    padding: 10px 0
+}
+
+.peru-travel p {
+    font-family: 'BreePeru-Regular';
+    margin-left: 0;
+    font-size: 15px;
+    margin: 0 auto;
+    margin-bottom: 15px
+}
+
+.encuentranos p {
+    margin-top: 0;
+    text-align: center;
+    width: 100%;
+    font-family: 'BreePeru-Regular';
+    margin-left: 0;
+    font-size: 16px;
+    margin: 0 auto;
+    margin-bottom: 15px
+}
+
+ul.redes li {
+    display: inline-block;
+    margin-right: 0
+}
+
+ul.redes {
+    margin-left: -32px
+}
+
+ul.redes.redes-top {
+    margin: -15px auto;
+    padding-left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center
+}
+
+ul.redes.redes-down {
+    margin: 0 auto;
+    padding-left: 0
+}
+
+.suscribete {
+    padding: 10px;
+    background: url(../images/suscribe.png) center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 100%;
+    height: 169px;
+    width: 25%;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center
+}
+
+.text-suscribe {
+    text-align: center;
+    font-family: 'BreePeru-Light';
+    font-size: 18px;
+    line-height: 20px
+}
+
+.section-h1 {
+    background-color: #0070af;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0
+}
+
+.section-h1 h1 {
+    font-family: 'BreePeru-Bold';
+    margin-bottom: 0;
+    font-size: 2.3em;
+    margin-top: 10px
+}
+
+.section-h1 p {
+    font-family: 'BreePeru-light';
+    margin-top: 5px;
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-align: center
+}
+
+.section-h1 p span {
+    font-family: 'BreePeru-Regular';
+    text-decoration: underline
+}
+
+.section-h1 a,
+.section-h1 a:hover {
+    color: #FFF;
+    text-decoration: none
+}
+
+.h1-readonly {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0
+}
+
+.logo-ytqp-foot img {
+    width: 77%;
+    margin-top: 12%;
+    margin-left: 18%
+}
+
+.btn-suscribe {
+    background: -moz-linear-gradient(left, rgba(242, 181, 14, 1) 0%, rgba(236, 161, 0, 1) 100%);
+    background: -o-linear-gradient(left, rgba(242, 181, 14, 1) 0%, rgba(236, 161, 0, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(242, 181, 14, 1) 0%, rgba(236, 161, 0, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#f2b50e', endColorstr='#eca100', GradientType=1);
+    text-align: center;
+    margin: 0 auto
+}
+
+.btn-suscribe a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 18px
+}
+
+p.otra-clase {
+    font-family: 'BreePeru-Regular'
+}
+
+.seccion-down {
+    background: #fff;
+    color: #989898;
+    margin: 0;
+    padding: 5px 0;
+    font-family: 'BreePeru-Light';
+    font-size: 16px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    width: 100%
+}
+
+.seccion-down a {
+    color: #989898;
+    text-decoration: none;
+    vertical-align: -webkit-baseline-middle
+}
+
+.seccion-down-left {
+    width: 33.33%;
+    float: left
+}
+
+.seccion-down-right {
+    width: 33.33%;
+    text-align: right
+}
+
+a.mapasitio {
+    margin-left: 60px
+}
+
+a.terminos {
+    margin-right: 60px
+}
+
+.partners li {
+    display: inline-block;
+    margin: 0 10px;
+    text-align: center
+}
+
+ul.partners {
+    text-align: center;
+    margin-left: -53px;
+    margin-top: 0;
+    margin-bottom: 0
+}
+
+.contenedor {
+    width: 100%;
+    height: 407px;
+    text-align: center;
+    display: flex;
+    margin: 0 auto
+}
+
+#banner {
+    width: 329px;
+    height: 407px;
+    background-color: #666;
+    transition: 300ms;
+    margin: 0 auto;
+    float: left;
+    margin-right: 0
+}
+
+#banner2 {
+    width: 329px;
+    height: 407px;
+    background-color: #666;
+    transition: 300ms;
+    margin: 0 auto;
+    float: left;
+    margin: 0 20px
+}
+
+#banner3 {
+    width: 329px;
+    height: 407px;
+    background-color: #666;
+    transition: 300ms;
+    margin: 0 auto;
+    float: left;
+    margin-left: 0
+}
+
+#banner.expandir {
+    width: 494px;
+    height: 407px
+}
+
+#banner2.expandir {
+    width: 494px;
+    height: 407px
+}
+
+#banner3.expandir {
+    width: 494px;
+    height: 407px
+}
+
+.info2 {
+    font-family: 'BreePeru-Regular';
+    color: #FFF;
+    font-size: 18px
+}
+
+.info2 p {
+    color: #FFF;
+    font-family: 'BreePeru-light';
+    font-size: 15px;
+    margin-top: 10px
+}
+
+.ocultar {
+    display: none
+}
+
+@media only screen and (min-width:1824px) {
+    .descubre {
+        background-size: cover;
+        height: auto;
+        width: 100%;
+        padding-bottom: 150px
+    }
+    .planificador {
+        background-size: cover;
+        height: auto
+    }
+    .ofertas-tours a img {
+        width: 100%;
+        height: auto
+    }
+    ul.redes.redes-top {
+        margin: 0 auto;
+        margin-left: 8px
+    }
+    ul.redes.redes-down {
+        margin: 0 auto
+    }
+    .slick-dots li {
+        width: 56px
+    }
+    .contenedor-oferta {
+        top: 24%
+    }
+    .titulo-oferta {
+        font-size: 45px
+    }
+    .titulo-oferta span {
+        font-size: 40px
+    }
+    .texto-oferta {
+        font-size: 20px
+    }
+    .info {
+        font-size: 22px
+    }
+    .ofertas-tours a {
+        width: 27%
+    }
+    section.modulo.ofertas .ofertas-tours a {
+        width: 20%
+    }
+    div#divOfertasHome a {
+        width: 27%;
+        height: 100%;
+        display: inline-block;
+        min-height: 370px
+    }
+    .ofertas-tours a img {
+        width: 100%;
+        height: 430px
+    }
+    .ofertas-tours {
+        margin-top: 5%
+    }
+    .ofertas-tours .box-oferta .price-sale {
+        font-size: 23px;
+        line-height: 23px;
+        margin: 18px 15px
+    }
+    .ofertas-tours .box-oferta .desc-sale h3 {
+        line-height: 21px;
+        font-size: 19px
+    }
+    .ofertas-tours .box-oferta .desc-sale p {
+        font-size: 14px
+    }
+    .title-section {
+        font-size: 45px
+    }
+    .info-text {
+        font-size: 18px;
+        width: 80%
+    }
+    .planificador-desktop {
+        margin: 0 auto;
+        margin-top: 2%;
+        width: 70%;
+        height: 100%;
+        min-height: 500px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        max-width: 970px
+    }
+    .ofertas-home {
+        height: auto;
+        padding-bottom: 150px
+    }
+    .zona {
+        margin-right: 60px;
+        position: initial
+    }
+    .actividad {
+        position: inherit
+    }
+    .planifica-btn {
+        width: 100%;
+        background: none;
+        margin: 40px 0;
+        bottom: 0
+    }
+    .planifica-btn a {
+        background: rgba(242, 181, 14, 1);
+        background: -moz-linear-gradient(left, rgba(242, 181, 14, 1) 0%, rgba(236, 161, 0, 1) 100%);
+        background: -webkit-gradient(left top, right top, color-stop(0%, rgba(242, 181, 14, 1)), color-stop(100%, rgba(236, 161, 0, 1)));
+        background: -webkit-linear-gradient(left, rgba(242, 181, 14, 1) 0%, rgba(236, 161, 0, 1) 100%);
+        background: -o-linear-gradient(left, rgba(242, 181, 14, 1) 0%, rgba(236, 161, 0, 1) 100%);
+        background: -ms-linear-gradient(left, rgba(242, 181, 14, 1) 0%, rgba(236, 161, 0, 1) 100%);
+        background: linear-gradient(to right, rgba(242, 181, 14, 1) 0%, rgba(236, 161, 0, 1) 100%);
+        filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#f2b50e', endColorstr='#eca100', GradientType=1);
+        padding: 10px 25px;
+        border-bottom-right-radius: 12px;
+        border-top-left-radius: 12px;
+        display: inline-block
+    }
+    .destinos-desktop {
+        padding-top: 2%
+    }
+    #banner,
+    #banner2,
+    #banner3 {
+        width: 380px;
+        height: 457px;
+        background-size: cover
+    }
+    #banner2 {
+        margin: 0 40px
+    }
+    .box_2 {
+        height: 395px
+    }
+}
+
+.linkBusqueda {
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer
+}
+
+.linkBusqueda:hover {
+    color: #fff;
+    text-decoration: underline
+}
+
+.busqueda .buscar {
+    position: relative
+}
+
+.busqueda .buscar .select2-container--default .select2-selection--multiple {
+    background-color: transparent;
+    border: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    min-height: auto
+}
+
+.busqueda .buscar .select2-container--default .select2-selection--multiple .select2-selection__choice {
+    border: none;
+    background-color: transparent;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    color: #d52b1e
+}
+
+.busqueda .buscar .select2-container--default .select2-selection--multiple .select2-selection__choice .select2-selection__choice__remove {
+    display: none
+}
+
+.busqueda .buscar .select2-container--default .select2-search--inline .select2-search__field::-webkit-input-placeholder {
+    color: #eb9c96
+}
+
+.busqueda .buscar .select2-container--default .select2-search--inline .select2-search__field:-moz-placeholder {
+    color: #eb9c96
+}
+
+.busqueda .buscar .select2-container--default .select2-search--inline .select2-search__field::-moz-placeholder {
+    color: #eb9c96
+}
+
+.busqueda .buscar .select2-container--default .select2-search--inline .select2-search__field:-ms-input-placeholder {
+    color: #eb9c96
+}
+
+.busqueda .buscar .select2-container {
+    border-bottom: 1px solid #d52b1e;
+    margin-left: 15px
+}
+
+.select2-dropdown {
+    background-color: #e1f7f5;
+    border: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: 0 1px 15px rgba(20, 20, 20, .5);
+    -moz-box-shadow: 0 1px 15px rgba(20, 20, 20, .5);
+    box-shadow: 0 1px 15px rgba(20, 20, 20, .5)
+}
+
+.select2-dropdown .select2-results__option {
+    color: #909090;
+    border-bottom: 1px solid #34aba0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5
+}
+
+.select2-dropdown .select2-results__option:last-child {
+    border-bottom: none
+}
+
+.select2-dropdown .select2-results__option--highlighted,
+.select2-dropdown .select2-results__option[aria-selected=true] {
+    background-color: #e1f7f5!important;
+    color: #909090
+}
+
+@media only screen and (min-width:1536px) {
+    div#divOfertasHome a img {
+        width: 100%;
+        height: 100%
+    }
+}
+
+.next-section img {
+    animation: nextSec 1s infinite
+}
+
+@-webkit-keyframes nextSec {
+    0% {
+        opacity: .8
+    }
+    50% {
+        opacity: 1
+    }
+    100% {
+        opacity: .8
+    }
+}
+
+@-webkit-keyframes kenburns-top {
+    0% {
+        -webkit-transform: scale(1) translateY(0);
+        transform: scale(1) translateY(0);
+        -webkit-transform-origin: 50% 16%;
+        transform-origin: 50% 16%
+    }
+    100% {
+        -webkit-transform: scale(1.1) translateY(-15px);
+        transform: scale(1.1) translateY(-15px);
+        -webkit-transform-origin: top;
+        transform-origin: top
+    }
+}
+
+@keyframes kenburns-top {
+    0% {
+        -webkit-transform: scale(1) translateY(0);
+        transform: scale(1) translateY(0);
+        -webkit-transform-origin: 50% 16%;
+        transform-origin: 50% 16%
+    }
+    100% {
+        -webkit-transform: scale(1.1) translateY(-15px);
+        transform: scale(1.1) translateY(-15px);
+        -webkit-transform-origin: top;
+        transform-origin: top
+    }
+}
+
+.kenburns-top {
+    -webkit-animation: kenburns-top 10s ease-out reverse both;
+    animation: kenburns-top 10s ease-out reverse both;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+    animation-play-state: paused
+}
+
+.slick-slide.slick-current.slick-active .kenburns-top {
+    -webkit-animation: kenburns-top 10s ease-out reverse both;
+    animation: kenburns-top 10s ease-out reverse both;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+    animation-play-state: running
+}
+
+.dsct {
+    color: #FFF;
+    background-color: #f0b127;
+    font-size: 21px;
+    font-family: 'BreePeru-Bold';
+    text-align: center;
+    width: 55px;
+    height: 45px;
+    line-height: 15px;
+    border-radius: 5px;
+    position: absolute;
+    margin-top: -20px;
+    margin-left: 12px;
+    padding-top: 10px;
+    padding-left: 5px;
+    z-index: 6;
+    box-sizing: border-box
+}
+
+.dsct span {
+    font-size: 14px;
+    font-family: 'BreePeru-Light';
+    float: right;
+    margin-right: 10px;
+    margin-top: 2px
+}
+.btn-solomovil {
+    display: none;
+}

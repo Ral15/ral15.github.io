@@ -1,27 +1,1248 @@
+
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Raul Mar</title>
-		<!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="/css/main.css">
-	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-        		<li><a href="/gh-user-presence">Github's user presence</a></li> 
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-			<h1>I'm Raúl Mar!</h1>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="mailto:raulmar_94@hotmail.com">email</a></li>
-        		<li><a href="https://github.com/Ral15">github.com/Ral15</a></li>
-			</ul>
-		</footer>
-	</body>
+<html lang="es">
+<head id="Head1"><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="shortcut icon" href="images/logo-ytqp-gris.png"><link rel="stylesheet" type="text/css" href="css/internas.css"><link rel="stylesheet" type="text/css" href="css/main2.css"><link rel="stylesheet" type="text/css" href="css/mobile.css"><link rel="stylesheet" type="text/css" href="css/core.css"><link rel="stylesheet" type="text/css" href="css/header2.css"><link rel="stylesheet" type="text/css" href="css/slick.css">
+
+
+	<script src="js/jquery.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css"><link href="css/all.css" rel="stylesheet">
+    <script type="text/javascript" src="js/main.js"></script>
+
+    
+    <title>Rutas cortas de viaje en Per&uacute; | Y t&uacute; qu&eacute; planes?</title>
+    <meta name="description" content="Descubre las rutas cerca de ti, elige la que m&aacute;s te guste y vis&iacute;tala este fin de semana. Mini viajes en Per&uacute;.">
+    <!-- Facebook  -->
+    <meta property="og:title" content="Rutas cortas de viaje en Per&uacute; | Y t&uacute; qu&eacute; planes?">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.ytuqueplanes.com/">
+    <meta property="og:image" content="images/ytqp-share.jpg">
+    <meta property="og:site_name" content="Y t&uacute; qu&eacute; planes?">
+    <meta property="og:description" content="Descubre las rutas cerca de ti, elige la que m&aacute;s te guste y vis&iacute;tala este fin de semana. Rutas cortas en Per&uacute;">
+    <meta property="fb:admins" content="100002348994943">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@ConoceelPeru">
+    <meta name="twitter:title" content="Rutas cortas en Per&uacute; | Y t&uacute; qu&eacute; planes?">
+    <meta name="twitter:description" content="Descubre las rutas cerca de ti, elige que m&aacute;s te guste y vis&iacute;tala este fin de semana. Rutas cortas en Per&uacute;">
+    <meta name="twitter:image" content="https://www.ytuqueplanes.com/images/ytqp-share.jpg">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Analytics -->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-35893550-1', 'auto');
+        ga('require', 'displayfeatures');
+        ga('send', 'pageview');
+    </script>
+<title>
+
+</title></head>
+<body>
+    <header id="myHeader">
+        <div class="nav">
+            <div id="menu-destinos" class="menu-item">Destinos</div>
+            <div id="menu-ofertas" class="menu-item">Ofertas</div>
+            <div id="menu-experiencias" class="menu-item">Experiencias</div>
+            <div class="menu-logo"><a href="/"><img src="images/ytqp-logo.png"></a></div>
+            <div id="menu-rutascortas" class="menu-item"><a href="/rutas-cortas" onclick="SendEventGA('Menu', 1, 'Rutas cortas');">Rutas Cortas</a></div>
+            <div id="menu-guiaviajera" class="menu-item"><a href="/novedades" onclick="SendEventGA('Menu', 1, 'Guia viajera');">Guía Viajera</a></div>
+            <div class="menu-options">
+                <div id="menu-alerta" class="iconos icono-alerta"><span class="helper"></span><img class="alerta-icono" src="images/alert_top.png"></div>
+                <div id="menu-usuario" class="iconos"><span class="helper"></span><img src="images/user.png"></div>
+                <div id="menu-busqueda" class="iconos"><span class="helper"></span><img src="images/search.png"></div>
+            </div>
+        </div>
+        <div id="submenu-destinos" class="submenu-desktop">
+            <div class="content-sm sm-destinos">
+                <div class="contenedor-mapa">
+                    <img id="mapa-peru" class="mapa mapa-base" src="images/mapa-peru.png" alt="Regiones - Y tú qué planes?">
+                    <img id="mapa-amazonas" class="mapa" src="images/mapa-amazonas.png" alt="Regiones - Y tú qué planes?">
+                    <img id="mapa-ancash" class="mapa" src="images/mapa-ancash.png" alt="Regiones - Y tú qué planes?">
+                    <img id="mapa-apurimac" class="mapa" src="images/mapa-apurimac.png" alt="Regiones - Y tú qué planes?">
+                    <img id="mapa-arequipa" class="mapa" src="images/mapa-arequipa.png" alt="Regiones - Y tú qué planes?">
+                    <img id="mapa-ayacucho" class="mapa" src="images/mapa-ayacucho.png" alt="Regiones - Y tú qué planes?">
+                    <img id="mapa-cajamarca" class="mapa" src="images/mapa-cajamarca.png" alt="Regiones - Y tú qué planes?">
+                    <img id="mapa-cusco" class="mapa" src="images/mapa-cusco.png" alt="Regiones - Y tú qué planes?">
+                    <img id="mapa-huancavelica" class="mapa" src="images/mapa-huancavelica.png" alt="Regiones - Y tú qué planes?">
+                    <img id="mapa-huanuco" class="mapa" src="images/mapa-huanuco.png" alt="Regiones - Y tú qué planes?">
+                    <img id="mapa-ica" class="mapa" src="images/mapa-ica.png" alt="Regiones - Y tú qué planes?">
+                    <img id="mapa-junin" class="mapa" src="images/mapa-junin.png" alt="Regiones - Y tú qué planes?">
+                    <img id="mapa-libertad" class="mapa" src="images/mapa-la-libertad.png" alt="Regiones - Y tú qué planes?">
+                    <img id="mapa-lambayeque" class="mapa" src="images/mapa-lambayeque.png" alt="Regiones - Y tú qué planes?">
+                    <img id="mapa-lima" class="mapa" src="images/mapa-lima.png" alt="Regiones - Y tú qué planes?">
+                    <img id="mapa-loreto" class="mapa" src="images/mapa-loreto.png" alt="Regiones - Y tú qué planes?">
+                    <img id="mapa-madre" class="mapa" src="images/mapa-madre-de-dios.png" alt="Regiones - Y tú qué planes?">
+                    <img id="mapa-moquegua" class="mapa" src="images/mapa-moquegua.png" alt="Regiones - Y tú qué planes?">
+                    <img id="mapa-pasco" class="mapa" src="images/mapa-pasco.png" alt="Regiones - Y tú qué planes?">
+                    <img id="mapa-piura" class="mapa" src="images/mapa-piura.png" alt="Regiones - Y tú qué planes?">
+                    <img id="mapa-puno" class="mapa" src="images/mapa-puno.png" alt="Regiones - Y tú qué planes?">
+                    <img id="mapa-sanmartin" class="mapa" src="images/mapa-san-martin.png" alt="Regiones - Y tú qué planes?">
+                    <img id="mapa-tacna" class="mapa" src="images/mapa-tacna.png" alt="Regiones - Y tú qué planes?">
+                    <img id="mapa-tumbes" class="mapa" src="images/mapa-tumbes.png" alt="Regiones - Y tú qué planes?">
+                    <img id="mapa-ucayali" class="mapa" src="images/mapa-ucayali.png" alt="Regiones - Y tú qué planes?">
+                </div>
+                <div class="opciones-sm">
+                    <div class="region region-norte">
+                        <div class="title-region">
+                            <h2>NORTE</h2>
+                        </div>
+                        <div class="region-destacada">
+                            <a id="reg-lbyq" href="/destinos/lambayeque" onclick="SendEventGA('Menu', 1, 'Destino Destacado - Lambayeque');">
+                                <img src="images/reg-lambayeque.jpg">
+                                <span class="name-reg-dest">Lambayeque</span>
+                            </a>
+                        </div>
+                        <div class="lista-opciones-reg">
+                            <ul>
+                                <li><i class="fas fa-chevron-right"></i> <a id="reg-amazonas" onclick="SendEventGA('Menu', 1, 'Destinos - Amazonas');" href="/destinos/amazonas">Amazonas</a></li>
+                                <li><i class="fas fa-chevron-right"></i> <a id="reg-cajamarca" onclick="SendEventGA('Menu', 1, 'Destinos - Cajamarca');" href="/destinos/cajamarca">Cajamarca</a></li>
+                                <li><i class="fas fa-chevron-right"></i> <a id="reg-libertad" onclick="SendEventGA('Menu', 1, 'Destinos - La Libertad');" href="/destinos/la-libertad">La Libertad</a></li>
+                                <li><i class="fas fa-chevron-right"></i> <a id="reg-lambayeque" onclick="SendEventGA('Menu', 1, 'Destinos - Lambayeque');" href="/destinos/lambayeque">Lambayeque</a></li>
+                            </ul>
+                            <ul>
+                                <li><i class="fas fa-chevron-right"></i> <a id="reg-loreto" onclick="SendEventGA('Menu', 1, 'Destinos - Loreto');" href="/destinos/loreto">Loreto</a></li>
+                                <li><i class="fas fa-chevron-right"></i> <a id="reg-piura" onclick="SendEventGA('Menu', 1, 'Destinos - Piura');" href="/destinos/piura">Piura</a></li>
+                                <li><i class="fas fa-chevron-right"></i> <a id="reg-sanmartin" onclick="SendEventGA('Menu', 1, 'Destinos - San Martin');" href="/destinos/san-martin">San Martín</a></li>
+                                <li><i class="fas fa-chevron-right"></i> <a id="reg-tumbes" onclick="SendEventGA('Menu', 1, 'Destinos - Tumbes');" href="/destinos/tumbes">Tumbes</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="region region-centro">
+                        <div class="title-region">
+                            <h2>centro</h2>
+                        </div>
+                        <div class="region-destacada">
+                            <a id="reg-ancsh" onclick="SendEventGA('Menu', 1, 'Destino Destacado - Ancash');" href="/destinos/ancash">
+                                <img src="images/reg-ancash.jpg">
+                                <span class="name-reg-dest">Áncash</span>
+                            </a>
+                        </div>
+                        <div class="lista-opciones-reg">
+                            <ul>
+                                <li><i class="fas fa-chevron-right"></i> <a id="reg-ancash" onclick="SendEventGA('Menu', 1, 'Destinos - Ancash');" href="/destinos/ancash">Áncash</a></li>
+                                <li><i class="fas fa-chevron-right"></i> <a id="reg-huancavelica" onclick="SendEventGA('Menu', 1, 'Destinos - Huancavelica');" href="/destinos/huancavelica">Huancavelica</a></li>
+                                <li><i class="fas fa-chevron-right"></i> <a id="reg-huanuco" onclick="SendEventGA('Menu', 1, 'Destinos - Huanuco');" href="/destinos/huanuco">Huánuco</a></li>
+                                <li><i class="fas fa-chevron-right"></i> <a id="reg-junin" onclick="SendEventGA('Menu', 1, 'Destinos - Junin');" href="/destinos/junin">Junín</a></li>
+                            </ul>
+                            <ul>
+                                <li><i class="fas fa-chevron-right"></i> <a id="reg-lima" onclick="SendEventGA('Menu', 1, 'Destinos - Lima');" href="/destinos/lima">Lima</a></li>
+                                <li><i class="fas fa-chevron-right"></i> <a id="reg-pasco" onclick="SendEventGA('Menu', 1, 'Destinos - Pasco');" href="/destinos/pasco">Pasco</a></li>
+                                <li><i class="fas fa-chevron-right"></i> <a id="reg-ucayali" onclick="SendEventGA('Menu', 1, 'Destinos - Ucayali');" href="/destinos/ucayali">Ucayali</a></li>                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="region region-sur">
+                        <div class="title-region">
+                            <h2>SUR</h2>
+                        </div>
+                        <div class="region-destacada">
+                            <a id="reg-mqgua" onclick="SendEventGA('Menu', 1, 'Destino Destacado - Moquegua');" href="/destinos/moquegua">
+                                <img src="images/reg-moquegua.jpg">
+                                <span class="name-reg-dest">Moquegua</span>
+                            </a>
+                        </div>
+                        <div class="lista-opciones-reg">
+                            <ul>
+                                <li><i class="fas fa-chevron-right"></i> <a id="reg-apurimac" onclick="SendEventGA('Menu', 1, 'Destinos - Apurimac');" href="/destinos/apurimac">Apurímac</a></li>
+                                <li><i class="fas fa-chevron-right"></i> <a id="reg-arequipa" onclick="SendEventGA('Menu', 1, 'Destinos - Arequipa');" href="/destinos/arequipa">Arequipa</a></li>
+                                <li><i class="fas fa-chevron-right"></i> <a id="reg-ayacucho" onclick="SendEventGA('Menu', 1, 'Destinos - Ayacucho');" href="/destinos/ayacucho">Ayacucho</a></li>
+                                <li><i class="fas fa-chevron-right"></i> <a id="reg-cusco" onclick="SendEventGA('Menu', 1, 'Destinos - Cusco');" href="/destinos/cusco">Cusco</a></li>
+                                <li><i class="fas fa-chevron-right"></i> <a id="reg-ica" onclick="SendEventGA('Menu', 1, 'Destinos - Ica');" href="/destinos/ica">Ica</a></li>
+                            </ul>
+                            <ul>
+                                <li><i class="fas fa-chevron-right"></i> <a id="reg-madre" onclick="SendEventGA('Menu', 1, 'Destinos - Madre de Dios');" href="/destinos/madre-de-dios">Madre de Dios</a></li>
+                                <li><i class="fas fa-chevron-right"></i> <a id="reg-moquegua" onclick="SendEventGA('Menu', 1, 'Destinos - Moquegua');" href="/destinos/moquegua">Moquegua</a></li>
+                                <li><i class="fas fa-chevron-right"></i> <a id="reg-puno" onclick="SendEventGA('Menu', 1, 'Destinos - Puno');" href="/destinos/puno">Puno</a></li>
+                                <li><i class="fas fa-chevron-right"></i> <a id="reg-tacna" onclick="SendEventGA('Menu', 1, 'Destinos - Tacna');" href="/destinos/tacna">Tacna</a></li>                               
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="submenu-ofertas" class="submenu-desktop">
+            <div class="submenu-lateral">
+                <div id="submenu-norte-of" class="submenu-lateral-item">Norte ></div>
+                <div id="submenu-centro-of" class="submenu-lateral-item">Centro ></div>
+                <div id="submenu-sur-of" class="submenu-lateral-item">Sur ></div>
+            </div>
+            <div id="submenu-detalle-norte-of" class="submenu-detalle">
+                <div class="submenu-detalle-item">
+                    <a href="/ofertas/01_amazonas" onclick="SendEventGA('Menu', 1, 'Ofertas - Amazonas');">
+                        <img src="images/amazonas.png" alt="Ofertas de Viaje en Amazonas - Y tú que planes?">
+                        <div class="title-destino">Amazonas</div>
+                    </a>
+                </div>
+                <div class="submenu-detalle-item">
+                    <a href="/ofertas/06_cajamarca" onclick="SendEventGA('Menu', 1, 'Ofertas - Cajamarca');">
+                        <img src="images/cajamarca.png" alt="Ofertas de Viaje en Cajamarca - Y tú que planes?">
+                        <div class="title-destino">Cajamarca</div>
+                    </a>
+                </div>
+                <div class="submenu-detalle-item">
+                    <a href="/ofertas/13_la-libertad" onclick="SendEventGA('Menu', 1, 'Ofertas - Libert');">
+                        <img src="images/la-libertad.png" alt="Ofertas de Viaje en La Libertad - Y tú que planes?">
+                        <div class="title-destino">La Libertad</div>
+                    </a>
+                </div>
+                <div class="submenu-detalle-item">
+                    <a href="/ofertas/14_lambayeque" onclick="SendEventGA('Menu', 1, 'Ofertas - Lambayeque');">
+                        <img src="images/lambayeque.png" alt="Ofertas de Viaje en Lambayeque - Y tú que planes?">
+                        <div class="title-destino">Lambayeque</div>
+                    </a>
+                </div>
+                <div class="submenu-detalle-item">
+                    <a href="/ofertas/16_loreto" onclick="SendEventGA('Menu', 1, 'Ofertas - Loreto');">
+                        <img src="images/loreto.png" alt="Ofertas de Viaje en Loreto - Y tú que planes?">
+                        <div class="title-destino">Loreto</div>
+                    </a>
+                </div>
+                <div class="submenu-detalle-item">
+                    <a href="/ofertas/20_piura" onclick="SendEventGA('Menu', 1, 'Ofertas - Piura');">
+                        <img src="images/piura.png" alt="Ofertas de Viaje en Piura - Y tú que planes?">
+                        <div class="title-destino">Piura</div>
+                    </a>
+                </div>
+                <div class="submenu-detalle-item">
+                    <a href="/ofertas/22_san-martin" onclick="SendEventGA('Menu', 1, 'Ofertas - San Martin');">
+                        <img src="images/san-martin.png" alt="Ofertas de Viaje en San Martin - Y tú que planes?">
+                        <div class="title-destino">San Martín</div>
+                    </a>
+                </div>
+                <div class="submenu-detalle-item">
+                    <a href="/ofertas/24_tumbes" onclick="SendEventGA('Menu', 1, 'Ofertas - Tumbes');">
+                        <img src="images/tumbes.png" alt="Ofertas de Viaje en Tumbes - Y tú que planes?">
+                        <div class="title-destino">Tumbes</div>
+                    </a>
+                </div>
+            </div>
+            <div id="submenu-detalle-centro-of" class="submenu-detalle">
+                <div class="submenu-detalle-item">
+                    <a href="/ofertas/02_ancash" onclick="SendEventGA('Menu', 1, 'Ofertas - Áncash');">
+                        <img src="images/ancash.png" alt="Ofertas de Viaje en Áncash - Y tú que planes?">
+                        <div class="title-destino">Áncash</div>
+                    </a>
+                </div>
+                <div class="submenu-detalle-item">
+                    <a href="/ofertas/09_huancavelica" onclick="SendEventGA('Menu', 1, 'Ofertas - Huancavel');">
+                        <img src="images/huancavelica.png" alt="Ofertas de Viaje en Huancavelica - Y tú que planes?">
+                        <div class="title-destino">Huancavelica</div>
+                    </a>
+                </div>
+                <div class="submenu-detalle-item">
+                    <a href="/ofertas/10_huanuco" onclick="SendEventGA('Menu', 1, 'Ofertas - Huánuco');">
+                        <img src="images/huanuco.png" alt="Ofertas de Viaje en Huánuco - Y tú que planes?">
+                        <div class="title-destino">Huánuco</div>
+                    </a>
+                </div>
+                <div class="submenu-detalle-item">
+                    <a href="/ofertas/12_junin" onclick="SendEventGA('Menu', 1, 'Ofertas - Junín');">
+                        <img src="images/junin.png" alt="Ofertas de Viaje en Junín - Y tú que planes?">
+                        <div class="title-destino">Junín</div>
+                    </a>
+                </div>
+                <div class="submenu-detalle-item">
+                    <a href="/ofertas/15_lima" onclick="SendEventGA('Menu', 1, 'Ofertas - Lima');">
+                        <img src="images/lima.png" alt="Ofertas de Viaje en Lima - Y tú que planes?">
+                        <div class="title-destino">Lima</div>
+                    </a>
+                </div>
+                <div class="submenu-detalle-item">
+                    <a href="/ofertas/19_pasco" onclick="SendEventGA('Menu', 1, 'Ofertas - Pasco');">
+                        <img src="images/pasco.png" alt="Ofertas de Viaje en Pasco - Y tú que planes?">
+                        <div class="title-destino">Pasco</div>
+                    </a>
+                </div>
+                <div class="submenu-detalle-item">
+                    <a href="/ofertas/25_ucayali" onclick="SendEventGA('Menu', 1, 'Ofertas - Ucayali');">
+                        <img src="images/ucayali.png" alt="Ofertas de Viaje en Ucayali - Y tú que planes?">
+                        <div class="title-destino">Ucayali</div>
+                    </a>
+                </div>
+            </div>
+            <div id="submenu-detalle-sur-of" class="submenu-detalle">
+                <div class="submenu-detalle-item">
+                    <a href="/ofertas/03_apurimac" onclick="SendEventGA('Menu', 1, 'Ofertas - Apurímac');">
+                        <img src="images/apurimac.png" alt="Ofertas de Viaje en Apurímac - Y tú que planes?">
+                        <div class="title-destino">Apurímac</div>
+                    </a>
+                </div>
+               <div class="submenu-detalle-item">
+                    <a href="/ofertas/04_arequipa" onclick="SendEventGA('Menu', 1, 'Ofertas - Arequipa');">
+                        <img src="images/arequipa.png" alt="Ofertas de Viaje en Arequipa - Y tú que planes?">
+                        <div class="title-destino">Arequipa</div>
+                    </a>
+                </div>
+                <div class="submenu-detalle-item">
+                    <a href="/ofertas/05_ayacucho" onclick="SendEventGA('Menu', 1, 'Ofertas - Ayacucho');">
+                        <img src="images/ayacucho.png" alt="Ofertas de Viaje en Ayacucho - Y tú que planes?">
+                        <div class="title-destino">Ayacucho</div>
+                    </a>
+                </div>
+                <div class="submenu-detalle-item">
+                    <a href="/ofertas/08_cusco" onclick="SendEventGA('Menu', 1, 'Ofertas - Cusco');">
+                        <img src="images/cusco.png" alt="Ofertas de Viaje en Cusco - Y tú que planes?">
+                        <div class="title-destino">Cusco</div>
+                    </a>
+                </div>
+                <div class="submenu-detalle-item">
+                    <a href="/ofertas/11_ica" onclick="SendEventGA('Menu', 1, 'Ofertas - Ica');">
+                        <img src="images/ica.png" alt="Ofertas de Viaje en Ica - Y tú que planes?">
+                        <div class="title-destino">Ica</div>
+                    </a>
+                </div>
+                 <div class="submenu-detalle-item">
+                     <a href="/ofertas/17_madre-de-dios" onclick="SendEventGA('Menu', 1, 'Ofertas - Madre de Dios');">
+                        <img src="images/madre-de-dios.png" alt="Ofertas de Viaje en Madre de Dios - Y tú que planes?">
+                        <div class="title-destino">Madre de Dios</div>
+                    </a>
+                </div>
+                <div class="submenu-detalle-item">
+                    <a href="/ofertas/18_moquegua" onclick="SendEventGA('Menu', 1, 'Ofertas - Moquegua');">
+                        <img src="images/moquegua.png" alt="Ofertas de Viaje en Moquegua - Y tú que planes?">
+                        <div class="title-destino">Moquegua</div>
+                    </a>
+                </div>
+                <div class="submenu-detalle-item">
+                    <a href="/ofertas/21_puno" onclick="SendEventGA('Menu', 1, 'Ofertas - Puno');">
+                        <img src="images/puno.png" alt="Ofertas de Viaje en Puno - Y tú que planes?">
+                        <div class="title-destino">Puno</div>
+                    </a>
+                </div>
+
+                <div class="submenu-detalle-item">
+                    <a href="/ofertas/23_tacna" onclick="SendEventGA('Menu', 1, 'Ofertas - Tacna');">
+                        <img src="images/tacna.png" alt="Ofertas de Viaje en Tacna - Y tú que planes?">
+                        <div class="title-destino">Tacna</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="submenu-experiencias" class="submenu-desktop-exp">
+            <div class="submenu-exp-item">
+                <a href="/actividades/1_aventura">
+                    <img src="images/aventura-uno.png">
+                    <div class="title-exp">Aventura</div>
+                </a>
+            </div>
+            <div class="submenu-exp-item">
+                <a href="/actividades/2_naturaleza">
+                    <img src="images/naturaleza-uno.png">
+                    <div class="title-exp">Naturaleza</div>
+                </a>
+            </div>
+            <div class="submenu-exp-item">
+                <a href="/actividades/4_historia-y-cultura">
+                    <img src="images/historia-uno.png">
+                    <div class="title-exp">Historia y <br>Cultura</div>
+                </a>
+            </div>
+            <div class="submenu-exp-item">
+                <a href="/actividades/7_descanso-y-relax">
+                    <img src="images/relax-uno.png">
+                    <div class="title-exp">Descanso y <br>Relax</div>
+                </a>
+            </div>
+            <div class="submenu-exp-item">
+                <a href="/festividades">
+                    <img class="fest" src="images/fiestas-uno.png">
+                    <div class="title-exp fest-text">Festividades</div>
+                </a>
+            </div>
+            <div class="submenu-exp-item">
+                <a href="/actividades/6_turismo-vivencial">
+                    <img src="images/turismo-uno.png">
+                    <div class="title-exp rural">Turismo Rural <br>Comunitario</div>
+                </a>
+            </div>
+        </div>
+        <div id="submenu-alertas" class="submenu-desktop-al">
+            <div class="submenu-lateral-al">
+                <div id="submenu-alerta1" class="submenu-lateral-item-al  menu-activo">
+                    <a href="https://www.latam.com/es_pe/vuelos-destinos/nacionales/ilo/?forced_home=fr/fr&s_cid=EU_zanox_banner_standard&utm_source=zanox&utm_medium=afiliado&utm_campaign=afiliacionAO&utm_content=EU_zanox_banner_standard" target="_blank" onclick="SendEventGA('Alertas', 1, 'Nueva ruta Lima Ilo');">LATAM Airlines Perú anuncia vuelo interregional entre Lima - Ilo</a>
+                </div>
+                 <div id="submenu-alerta2" class="submenu-lateral-item-al menu-activo">
+                    <a href="http://export.promperu.gob.pe/emailing/2018/set/pdf/feriados_2018.pdf" target="_blank" onclick="SendEventGA('Alertas', 1, 'Feriados 2019');">Revisa la lista completa de feriados 2019</a>
+                </div>
+               
+        <!--  <div id="submenu-alerta3" class="submenu-lateral-item-al">
+                    <a href="/festividades" target="_blank" onclick="SendEventGA('Alertas', 1, 'Festividades Peru');">¡No te pierdas las festividades y eventos peruanos!</a>
+                </div> -->
+            </div>
+            <div id="submenu-detalle-alerta1" class="submenu-detalle-al">
+                <div class="submenu-detalle-item-al">
+                    <a href="https://www.latam.com/es_pe/vuelos-destinos/nacionales/ilo/?forced_home=fr/fr&s_cid=EU_zanox_banner_standard&utm_source=zanox&utm_medium=afiliado&utm_campaign=afiliacionAO&utm_content=EU_zanox_banner_standard" target="_blank" onclick="SendEventGA('Alertas', 1, 'Nueva ruta Lima Ilo');">
+                        <img src="images/nueva-ruta-lima-ilo-latam.png" alt="¡Nueva ruta Cusco Pisco! - Y tú que planes?">
+                    </a>
+                </div>
+            </div>
+            <div id="submenu-detalle-alerta2" class="submenu-detalle-al">
+                <div class="submenu-detalle-item-al">
+                    <a href="http://export.promperu.gob.pe/emailing/2018/set/pdf/feriados_2018.pdf" target="_blank" onclick="SendEventGA('Alertas', 1, 'Feriados 2019');">
+                        <img src="images/banner-alerta-2_2.png" alt="Feriados 2019 - Y tú que planes?">
+                    </a>
+                </div>
+            </div>
+            
+        <!--   <div id="submenu-detalle-alerta3" class="submenu-detalle-al">
+                <div class="submenu-detalle-item-al">
+                    <a href="/festividades" target="_blank" onclick="SendEventGA('Alertas', 1, 'Festividades Peru');">
+                        <img src="/img/banner-alerta-3_2.png" alt="Festividades Perú - Y tú que planes?">
+                    </a>
+                </div>
+            </div> -->
+        </div>
+        <div id="submenu-usuario" class="submenu-desktop-usuario">
+            <div id="submenu-detalle-usuario" class="submenu-detalle-usuario">
+                <div class="submenu-detalle-item-usuario"><img src="images/registro.jpg"></div>
+            </div>
+            <div class="submenu-lateral-usuario">
+                <div id="submenu-usuario2" class="submenu-item-usuario">
+                    <div class="invita-usuario">¡Te ayudamos a planificar <br>tu próxima aventura por el Perú!</div>
+                    <a href="/registro" id="lnkLoginD" class="comienza-ahora ingreso" onclick="SendEventGA(&#39;Menu&#39;, 1, &#39;Registro&#39;);">Ingresa o regístrate</a>
+                    
+                    <a class="comienza-ahora plan-viaje" href="/plan-viaje" onclick="SendEventGA('Menu', 1, 'Plan de Viaje');">Planes de Viaje</a>
+                </div>
+            </div>
+        </div>
+        <div id="submenu-busqueda" class="submenu-desktop-bus">
+            <div class="submenu-bus-item">
+                <form class="form-inline">
+                    <div class="form-group">
+                        <div class="buscar input-group">
+                            <input style="display:block;margin:0 auto;width: 60%;background: #258079!important;border: 0;padding: 10px;color: #FFF;border-radius: 5px;font-family: 'BreePeru-Light';font-size: 16px;" name="country" id="autocomplete" placeholder="Busca en Y tú qué planes...">
+                        </div>
+                    </div>
+                </form>
+                <div class="trend-busquedas">
+                    <h2>Lo más buscado por los viajeros <img src="images/chart-1.png" alt="Lo más buscado - Y tú qué planes?"></h2>
+                    <div class="tags-trends">
+                        <a href="https://www.ytuqueplanes.com/destinos/lima/157_churin">Churín</a>
+                        <a href="https://www.ytuqueplanes.com/destinos/san-martin/233_ciudad-de-tarapoto">Tarapoto</a>
+                        <a href="https://www.ytuqueplanes.com/destinos/lima/154_lunahuana">Lunahuaná</a>
+                        <a href="https://www.ytuqueplanes.com/destinos/ancash/14_ciudad-de-huaraz">Huaraz</a>
+                        <a href="https://www.ytuqueplanes.com/destinos/loreto/170_la-ciudad-de-iquitos">Iquitos</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="nav-movil">
+            <div class="menu-logo-movil"><a href="/"><img src="images/ytqp-logo.png"></a></div>        
+            <div class="menu-movil">
+                <div class="menu-movil-lineas">
+                    <span class="menu-movil-linea"></span>
+                    <span class="menu-movil-linea"></span>
+                    <span class="menu-movil-linea"></span>
+                </div>
+            </div>
+            <div class="menu-alerta-movil"><img class="alerta-icono" src="images/alert_top.png"></div>
+            <div id="menu-buscar-movil" class="submenu-buscar-movil"><img src="images/search.png"></div>
+        </div>
+        <div class="submenu-movil">
+            <div id="menu-destinos-movil" class="submenu-item-movil">
+                <div class="titulo-item-movil titulo-item-separacion">
+                    Destinos
+                    <div class="titulo-item-action titulo-action-separacion"></div>
+                </div>
+            </div>
+            <div class="submenu-destinos-movil">
+                <div class="submenu-destinos-superior-movil">
+                    <div id="submenu-norte-movil" class="submenu-destinos-superior-item">Norte ></div>
+                    <div id="submenu-centro-movil" class="submenu-destinos-superior-item">Centro ></div>
+                    <div id="submenu-sur-movil" class="submenu-destinos-superior-item">Sur ></div>    
+                </div>
+                <div id="submenu-detalle-norte-movil" class="submenu-detalle-movil">
+                    <div class="submenu-detalle-item-movil">
+                        <a href="/destinos/tumbes">
+                            <img src="images/tumbes.png" alt="Tumbes - Y tú que planes?">
+                            <div class="title-destino-movil">Tumbes</div>
+                        </a>
+                    </div>
+                    <div class="submenu-detalle-item-movil">
+                        <a href="/destinos/piura">
+                            <img src="images/piura.png" alt="Piura - Y tú que planes?">
+                            <div class="title-destino-movil">Piura</div>
+                        </a>
+                    </div>
+                    <div class="submenu-detalle-item-movil">
+                        <a href="/destinos/lambayeque">
+                            <img src="images/lambayeque.png" alt="Lambayeque - Y tú que planes?">
+                            <div class="title-destino-movil">Lambayeque</div>
+                        </a>
+                    </div>
+                    <div class="submenu-detalle-item-movil">
+                        <a href="/destinos/la-libertad">
+                            <img src="images/la-libertad.png" alt="La Libertad - Y tú que planes?">
+                            <div class="title-destino-movil">La Libertad</div>
+                        </a>
+                    </div>
+                    <div class="submenu-detalle-item-movil">
+                        <a href="/destinos/cajamarca">
+                            <img src="images/cajamarca.png" alt="Cajamarca - Y tú que planes?">
+                            <div class="title-destino-movil">Cajamarca</div>
+                        </a>
+                    </div>
+                    <div class="submenu-detalle-item-movil">
+                        <a href="/destinos/amazonas">
+                            <img src="images/amazonas.png" alt="Amazonas - Y tú que planes?">
+                            <div class="title-destino-movil">Amazonas</div>
+                        </a>
+                    </div>
+                    <div class="submenu-detalle-item-movil">
+                        <a href="/destinos/loreto">
+                            <img src="images/loreto.png" alt="Loreto - Y tú que planes?">
+                            <div class="title-destino-movil">Loreto</div>
+                        </a>
+                    </div>
+                    <div class="submenu-detalle-item-movil">
+                        <a href="/destinos/san-martin">
+                            <img src="images/san-martin.png" alt="San Martín - Y tú que planes?">
+                            <div class="title-destino-movil">San Martín</div>
+                        </a>
+                    </div>
+                </div>
+                <div id="submenu-detalle-centro-movil" class="submenu-detalle-movil">
+                    <div class="submenu-detalle-item-movil">
+                        <a href="/destinos/ancash">
+                            <img src="images/ancash.png" alt="Áncash - Y tú que planes?">
+                            <div class="title-destino-movil">Áncash</div>
+                        </a>
+                    </div>
+                    <div class="submenu-detalle-item-movil">
+                        <a href="/destinos/lima">
+                            <img src="images/lima.png" alt="Lima - Y tú que planes?">
+                            <div class="title-destino-movil">Lima</div>
+                        </a>
+                    </div>
+                    <div class="submenu-detalle-item-movil">
+                        <a href="/destinos/huanuco">
+                            <img src="images/huanuco.png" alt="Huánuco - Y tú que planes?">
+                            <div class="title-destino-movil">Huánuco</div>
+                        </a>
+                    </div>
+                    <div class="submenu-detalle-item-movil">
+                        <a href="/destinos/junin">
+                            <img src="images/junin.png" alt="Junín - Y tú que planes?">
+                            <div class="title-destino-movil">Junín</div>
+                        </a>
+                    </div>
+                    <div class="submenu-detalle-item-movil">
+                        <a href="/destinos/pasco">
+                            <img src="images/pasco.png" alt="Pasco - Y tú que planes?">
+                            <div class="title-destino-movil">Pasco</div>
+                        </a>
+                    </div>
+                    <div class="submenu-detalle-item-movil">
+                        <a href="/destinos/ucayali">
+                            <img src="images/ucayali.png" alt="Ucayali - Y tú que planes?">
+                            <div class="title-destino-movil">Ucayali</div>
+                        </a>
+                    </div>
+                    <div class="submenu-detalle-item-movil">
+                        <a href="/destinos/huancavelica">
+                            <img src="images/huancavelica.png" alt="Huancavelica - Y tú que planes?">
+                            <div class="title-destino-movil">Huancavelica</div>
+                        </a>
+                    </div>
+                </div>
+                <div id="submenu-detalle-sur-movil" class="submenu-detalle-movil">
+                    <div class="submenu-detalle-item-movil">
+                        <a href="/destinos/ica">
+                            <img src="images/ica.png" alt="Ica - Y tú que planes?">
+                            <div class="title-destino-movil">Ica</div>
+                        </a>
+                    </div>
+                    <div class="submenu-detalle-item-movil">
+                        <a href="/destinos/arequipa">
+                            <img src="images/arequipa.png" alt="Arequipa - Y tú que planes?">
+                            <div class="title-destino-movil">Arequipa</div>
+                        </a>
+                    </div>
+                    <div class="submenu-detalle-item-movil">
+                        <a href="/destinos/moquegua">
+                            <img src="images/moquegua.png" alt="Moquegua - Y tú que planes?">
+                            <div class="title-destino-movil">Moquegua</div>
+                        </a>
+                    </div>
+                    <div class="submenu-detalle-item-movil">
+                        <a href="/destinos/tacna">
+                            <img src="images/tacna.png" alt="Tacna - Y tú que planes?">
+                            <div class="title-destino-movil">Tacna</div>
+                        </a>
+                    </div>
+                    <div class="submenu-detalle-item-movil">
+                        <a href="/destinos/puno">
+                            <img src="images/puno.png" alt="Puno - Y tú que planes?">
+                            <div class="title-destino-movil">Puno</div>
+                        </a>
+                    </div>
+                    <div class="submenu-detalle-item-movil">
+                        <a href="/destinos/ayacucho">
+                            <img src="images/ayacucho.png" alt="Ayacucho - Y tú que planes?">
+                            <div class="title-destino-movil">Ayacucho</div>
+                        </a>
+                    </div>
+                    <div class="submenu-detalle-item-movil">
+                        <a href="/destinos/apurimac">
+                            <img src="images/apurimac.png" alt="Apurímac - Y tú que planes?">
+                            <div class="title-destino-movil">Apurímac</div>
+                        </a>
+                    </div>
+                    <div class="submenu-detalle-item-movil">
+                        <a href="/destinos/cusco">
+                            <img src="images/cusco.png" alt="Cusco - Y tú que planes?">
+                            <div class="title-destino-movil">Cusco</div>
+                        </a>
+                    </div>
+                    <div class="submenu-detalle-item-movil">
+                         <a href="/destinos/madre-de-dios">
+                            <img src="images/madre-de-dios.png" alt="Madre de Dios - Y tú que planes?">
+                            <div class="title-destino-movil">Madre de Dios</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="menu-ofertas-movil" class="submenu-item-movil">
+                <div class="titulo-item-movil titulo-item-separacion">
+                    Ofertas
+                    <div class="titulo-item-action titulo-action-separacion"></div>
+                </div>
+            </div>
+            <div class="submenu-ofertas-movil">
+                <div class="submenu-destinos-superior-movil">
+                    <div id="submenu-norte-of-movil" class="submenu-destinos-superior-item">Norte ></div>
+                    <div id="submenu-centro-of-movil" class="submenu-destinos-superior-item">Centro ></div>
+                    <div id="submenu-sur-of-movil" class="submenu-destinos-superior-item">Sur ></div>    
+                </div>
+                <div id="submenu-ofertas-norte-movil" class="submenu-detalle-movil">
+                    <div class="submenu-detalle-item-movil">
+                        <a href="/ofertas/24_tumbes">
+                            <img src="images/tumbes.png" alt="Ofertas de Viaje en Tumbes - Y tú que planes?">
+                            <div class="title-destino-movil">Tumbes</div>
+                        </a>
+                    </div>
+                    <div class="submenu-detalle-item-movil">
+                        <a href="/ofertas/20_piura">
+                            <img src="images/piura.png" alt="Ofertas de Viaje en Piura - Y tú que planes?">
+                            <div class="title-destino-movil">Piura</div>
+                        </a>
+                    </div>
+                    <div class="submenu-detalle-item-movil">
+                        <a href="/ofertas/14_lambayeque">
+                            <img src="images/lambayeque.png" alt="Ofertas de Viaje en Lambayeque - Y tú que planes?">
+                            <div class="title-destino-movil">Lambayeque</div>
+                        </a>
+                    </div>
+                    <div class="submenu-detalle-item-movil">
+                        <a href="/ofertas/13_la-libertad">
+                            <img src="images/la-libertad.png" alt="Ofertas de Viaje en La Libertad - Y tú que planes?">
+                            <div class="title-destino-movil">La Libertad</div>
+                        </a>
+                    </div>
+                    <div class="submenu-detalle-item-movil">
+                        <a href="/ofertas/06_cajamarca">
+                            <img src="images/cajamarca.png" alt="Ofertas de Viaje en Cajamarca - Y tú que planes?">
+                            <div class="title-destino-movil">Cajamarca</div>
+                        </a>
+                    </div>
+                    <div class="submenu-detalle-item-movil">
+                        <a href="/ofertas/01_amazonas">
+                            <img src="images/amazonas.png" alt="Ofertas de Viaje en Amazonas - Y tú que planes?">
+                            <div class="title-destino-movil">Amazonas</div>
+                        </a>
+                    </div>
+                    <div class="submenu-detalle-item-movil">
+                        <a href="/ofertas/16_loreto">
+                            <img src="images/loreto.png" alt="Ofertas de Viaje en Loreto - Y tú que planes?">
+                            <div class="title-destino-movil">Loreto</div>
+                        </a>
+                    </div>
+                    <div class="submenu-detalle-item-movil">
+                        <a href="/ofertas/22_san-martin">
+                            <img src="images/san-martin.png" alt="Ofertas de Viaje en San Martín - Y tú que planes?">
+                            <div class="title-destino-movil">San Martín</div>
+                        </a>
+                    </div>
+                </div>
+                <div id="submenu-ofertas-centro-movil" class="submenu-detalle-movil">
+                    <div class="submenu-detalle-item-movil">
+                        <a href="/ofertas/02_ancash">
+                            <img src="images/ancash.png" alt="Ofertas de Viaje en Áncash - Y tú que planes?">
+                            <div class="title-destino-movil">Áncash</div>
+                        </a>
+                    </div>
+                    <div class="submenu-detalle-item-movil">
+                        <a href="/ofertas/15_lima">
+                            <img src="images/lima.png" alt="Ofertas de Viaje en Lima - Y tú que planes?">
+                            <div class="title-destino-movil">Lima</div>
+                        </a>
+                    </div>
+                    <div class="submenu-detalle-item-movil">
+                        <a href="/ofertas/10_huanuco">
+                            <img src="images/huanuco.png" alt="Ofertas de Viaje en Huánuco - Y tú que planes?">
+                            <div class="title-destino-movil">Huánuco</div>
+                        </a>
+                    </div>
+                    <div class="submenu-detalle-item-movil">
+                        <a href="/ofertas/12_junin">
+                            <img src="images/junin.png" alt="Ofertas de Viaje en Junín - Y tú que planes?">
+                            <div class="title-destino-movil">Junín</div>
+                        </a>
+                    </div>
+                    <div class="submenu-detalle-item-movil">
+                        <a href="/ofertas/19_pasco">
+                            <img src="images/pasco.png" alt="Ofertas de Viaje en Pasco - Y tú que planes?">
+                            <div class="title-destino-movil">Pasco</div>
+                        </a>
+                    </div>
+                    <div class="submenu-detalle-item-movil">
+                        <a href="/ofertas/25_ucayali">
+                            <img src="images/ucayali.png" alt="Ofertas de Viaje en Ucayali - Y tú que planes?">
+                            <div class="title-destino-movil">Ucayali</div>
+                        </a>
+                    </div>
+                    <div class="submenu-detalle-item-movil">
+                        <a href="/ofertas/09_huancavelica">
+                            <img src="images/huancavelica.png" alt="Ofertas de Viaje en Huancavelica - Y tú que planes?">
+                            <div class="title-destino-movil">Huancavelica</div>
+                        </a>
+                    </div>
+                </div>
+                <div id="submenu-ofertas-sur-movil" class="submenu-detalle-movil">
+                    <div class="submenu-detalle-item-movil">
+                        <a href="/ofertas/11_ica">
+                            <img src="images/ica.png" alt="Ofertas de Viaje en Ica - Y tú que planes?">
+                            <div class="title-destino-movil">Ica</div>
+                        </a>
+                    </div>
+                    <div class="submenu-detalle-item-movil">
+                        <a href="/ofertas/04_arequipa">
+                            <img src="images/arequipa.png" alt="Ofertas de Viaje en Arequipa - Y tú que planes?">
+                            <div class="title-destino-movil">Arequipa</div>
+                        </a>
+                    </div>
+                    <div class="submenu-detalle-item-movil">
+                        <a href="/ofertas/18_moquegua">
+                            <img src="images/moquegua.png" alt="Ofertas de Viaje en Moquegua - Y tú que planes?">
+                            <div class="title-destino-movil">Moquegua</div>
+                        </a>
+                    </div>
+                    <div class="submenu-detalle-item-movil">
+                        <a href="/ofertas/23_tacna">
+                            <img src="images/tacna.png" alt="Ofertas de Viaje en Tacna - Y tú que planes?">
+                            <div class="title-destino-movil">Tacna</div>
+                        </a>
+                    </div>
+                    <div class="submenu-detalle-item-movil">
+                        <a href="/ofertas/21_puno">
+                            <img src="images/puno.png" alt="Ofertas de Viaje en Puno - Y tú que planes?">
+                            <div class="title-destino-movil">Puno</div>
+                        </a>
+                    </div>
+                    <div class="submenu-detalle-item-movil">
+                        <a href="/ofertas/05_ayacucho">
+                            <img src="images/ayacucho.png" alt="Ofertas de Viaje en Ayacucho - Y tú que planes?">
+                            <div class="title-destino-movil">Ayacucho</div>
+                        </a>
+                    </div>
+                    <div class="submenu-detalle-item-movil">
+                        <a href="/ofertas/03_apurimac">
+                            <img src="images/apurimac.png" alt="Ofertas de Viaje en Apurímac - Y tú que planes?">
+                            <div class="title-destino-movil">Apurímac</div>
+                        </a>
+                    </div>
+                    <div class="submenu-detalle-item-movil">
+                        <a href="/ofertas/08_cusco">
+                            <img src="images/cusco.png" alt="Ofertas de Viaje en Cusco - Y tú que planes?">
+                            <div class="title-destino-movil">Cusco</div>
+                        </a>
+                    </div>
+                    <div class="submenu-detalle-item-movil">
+                         <a href="/ofertas/17_madre-de-dios">
+                            <img src="images/madre-de-dios.png" alt="Ofertas de Viaje en Madre de Dios - Y tú que planes?">
+                            <div class="title-destino-movil">Madre de Dios</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="menu-exp-movil" class="submenu-item-movil">
+                <div class="titulo-item-movil titulo-item-separacion">
+                    Experiencias
+                    <div class="titulo-item-action titulo-action-separacion"></div>
+                </div>
+            </div>
+            <div class="submenu-experiencias-movil">
+                <div class="submenu-exp-item-movil">
+                    <a href="/actividades/1_aventura">
+                        <img src="images/aventura-uno.png">
+                        <div class="title-exp-movil">Aventura</div>
+                    </a>
+                </div>
+                <div class="submenu-exp-item-movil">
+                    <a href="/actividades/6_turismo-vivencial">
+                        <img src="images/turismo-uno.png">
+                        <div class="title-exp-movil dos-lineas">Turismo Rural Comunitario</div>
+                    </a>
+                </div>
+                <div style="clear: both;"></div>
+                <div class="submenu-exp-item-movil">
+                    <a href="/actividades/2_naturaleza">
+                        <img src="images/naturaleza-uno.png">
+                        <div class="title-exp-movil">Naturaleza</div>
+                    </a>
+                </div>
+                <div class="submenu-exp-item-movil">
+                    <a href="/festividades">
+                        <img class="fest" src="images/fiestas-uno.png">
+                        <div class="title-exp-movil">Festividades</div>
+                    </a>
+                </div>
+                <div style="clear: both;"></div>
+                <div class="submenu-exp-item-movil">
+                    <a href="/actividades/4_historia-y-cultura">
+                        <img src="images/historia-uno.png">
+                        <div class="title-exp-movil dos-lineas">Historia y <br>Cultura</div>
+                    </a>
+                </div>
+                <div class="submenu-exp-item-movil">
+                    <a href="/actividades/7_descanso-y-relax">
+                        <img src="images/relax-uno.png">
+                        <div class="title-exp-movil dos-lineas">Descanso y <br>Relax</div>
+                    </a>
+                </div>
+            </div>
+            <div id="menu-rutas-movil" class="submenu-item-movil">
+                <div class="titulo-item-movil titulo-item-separacion"><a href="/rutas-cortas" onclick="SendEventGA('Menu', 1, 'Rutas cortas');">Rutas Cortas</a></div>
+            </div>
+            <div id="menu-guia-movil" class="submenu-item-movil"> 
+                <div class="titulo-item-movil"><a href="/novedades" onclick="SendEventGA('Menu', 1, 'Guia viajera');">Guía Viajera</a></div>
+            </div>
+            <div id="menu-cuenta-movil" class="submenu-item-movil">
+                <div class="titulo-item-movil">
+                    <span>Mi cuenta</span>
+                    <img src="images/user.png">
+                    <div class="titulo-item-action titulo-action-separacion"></div>
+                </div>
+            </div>
+            <div class="submenu-cuenta-movil">
+                <div class="submenu-cuenta-item-movil">
+                    <a href="/registro" id="lnkLoginM" onclick="SendEventGA(&#39;Menu&#39;, 1, &#39;Registro&#39;);">
+                        <div class="title-cuenta-movil">Ingresa o Regístrate</div>
+                    </a>                    
+                    
+                    <span>|</span>
+                </div>
+                <div class="submenu-cuenta-item-movil">
+                    <a href="/plan-viaje" onclick="SendEventGA('Menu', 1, 'Plan de Viaje');">
+                        <div class="title-cuenta-movil">Planes de Viaje</div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <div id="submenu-alertas-movil" class="submenu-movil-al">
+            <div class="submenu-movil-lateral-al">
+                 <div class="submenu-movil-lateral-item-al">
+                    <a href="https://www.latam.com/es_pe/vuelos-destinos/nacionales/ilo/?forced_home=fr/fr&s_cid=EU_zanox_banner_standard&utm_source=zanox&utm_medium=afiliado&utm_campaign=afiliacionAO&utm_content=EU_zanox_banner_standard" target="_blank" onclick="SendEventGA('Alertas', 1, 'Nueva ruta Lima Ilo');">LATAM Airlines Perú anuncia vuelo interregional entre Lima - Ilo
+                        <br><img src="images/nueva-ruta-lima-ilo-latam.png" alt="Nueva ruta Lima Ilo - Y tú que planes?"></a>
+                </div>
+                <div class="submenu-movil-lateral-item-al alerta-separacion">
+                    <a href="http://export.promperu.gob.pe/emailing/2018/set/pdf/feriados_2018.pdf" target="_blank" onclick="SendEventGA('Alertas', 1, 'Feriados 2019');">Revisa la lista completa de Feriados 2019
+                        <br><img src="images/banner-alerta-2_2.png" alt="Feriados 2019 - Y tú que planes?"></a>
+                </div>
+                              
+        <!-- <div class="submenu-movil-lateral-item-al alerta-separacion">
+                    <a href="/festividades" target="_blank" onclick="SendEventGA('Alertas', 1, 'Festividades Peru');">¡No te pierdas las festividades y eventos peruanos!
+                        <br><img src="/img/banner-alerta-3_2.png" alt="Festividades Perú - Y tú que planes?"></a>
+                </div> -->
+            </div>
+        </div>
+        <div id="submenu-busqueda-movil" class="submenu-movil-bus">
+            <div class="submenu-bus-item">
+                <form class="form-inline">
+                    <div class="form-group">
+                        <div class="buscar input-group">
+                            <input style="display:block;margin:0 auto;width: 60%;background: #258079!important;border: 0;padding: 10px;color: #FFF;border-radius: 5px;font-family: 'BreePeru-Light';font-size: 16px;" name="country" id="autocomplete2" placeholder="Busca en Y tú qué planes...">
+                        </div>
+                    </div>
+                </form>
+                <div class="trend-busquedas">
+                    <h2>Lo más buscado por los viajeros <img src="images/chart-1.png" alt="Lo más buscado - Y tú qué planes?"></h2>
+                    <div class="tags-trends">
+                        <a href="#">Millpu</a>
+                        <a href="#">Ica</a>
+                        <a href="#">Playas de Talara</a>
+                        <a href="#">Machu Picchu</a>
+                        <a href="#">Cajamarca</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <form method="post" action="./rutas-cortas" id="frmContent" dir="ltr">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="+JHyKabEQN0SJMY3DhGuL9Y+6qHW49MKftxHf83vkX0LvDxfMm030eV4HOiwtmZYSHQ6tyfsXZLILolkcmOtnqpZEVyzSmxitoRKYSfbqkTshHwlqFNxtS6ptwEax6DPEBBx6oZ9LI9w8PXiF2ucDrgeP/jBLWh02kS6NRZotQLvBYkwF07epc5hZIJFnwH8vBcF/qIZIvqEEKBnQsUjZv0Apkl7grxbR0UpP6hFDuSYJMC/GU78k6AMxs6lLQYOWbXO64+1f3DrqyLAR0OQsjfx5nXOSEiLStV3pfvrg/s3FKLnDPsVIdykgGNnHDLRIkP14hZecuKzFU0eWJLh1lHNvoRB9DKx7LW27lOztTysU4/Zbgl7P3/TZ9WMNIK3yFKMtjfx0SF82cB63eysHKwyp/7xr0NfGZfZxSpU/fGH6Ix5cmRVOrpP1kJ9Ccc94bbMb89vDlODI3t0M1bMD8CZ6sQpnfovtAqToZNU7NemtnZF6Ml6fW0gagmvFsK9ndEGMQwwbx28IY8vri9HdeW9HnnRLkbWvDtzaaQmG8F3MUNw3H8uA0e/8U5SWg6lTlt0AdU9+VumqOUg6HVhpe1k3gfVCpbFhWUwOiPgKYeMG8Kr/8xajAD9GYgQbO3ukxnQhxpbc6QADRtg+QaZ0hwyNB3VdBJ3f/FlGc9KzrEw8qLfV30wbMvjp9LluPrsqT2Tpq4ZDw3BjtOdmWyneoI7WFDlC9kyJx/EIl21cye0bgAeMGljSTSpSGbUjVHDXm2RtJHkOMwcQ3ZeNVaUIKv19s6smx3VhGFmfkhniPXGgADmSh2PL6ulBttcu+nFpxyMMx97g4TvZPFNYQQ8Qdvd1xYOkRa1nX6PRAvbSWSQ5drpXyV4Oa/RG3CVxGf9KUe6RrsVyvrK3HxtwNH6kMhDejzGe5bg/QF3eb8Lv3KBSZLgpvYNwWUoLDs/mjStWjy0ktmExQto4nm3dlUhXqF2kRCDeGHNOzohlELK55sLDos6j4zz58g73qfdQ6qpXml1KqiApz4gbPpJn9RF5JTY0YtTtfGGQ6vMcmWzqvhbHpJkbN2t/m5bec5GxYQATt61o1OsTWB0dDX4YmYAEbXWzm0eoBF1Gkb8M4JHH9X9auqh4XP13bGrD+rTwWH6I7YqOFkUIHpzHPKXc712dzHvNN1Jv2jl7quVgcfZYO7F/OHIWRNAHbMVC3B4jtbt8jK+gPLfY6FiRu9vFhtVZISUpoVbsRMW9BOqzFQT9FTIpVCAMCMgvovXii/khImb4WW/EMyiTXjKxYAhObYDQujd7QW0sQqgsA9hyon7HdUEV6yRJC7v3Qctz9H00V3s5voYuENiVFK+LcOCL2QaLMFm2m/3UY+PFloYR46qA1DHWnVF8XqgbaUPTRdIIXVyzDrZ3x1ZxDqjrYque2S6nCsR0BWmmBo8m+gdsX0MBdinH/PYvC8JULbhOypIloUaZgTrCMjKxDOYKzDrf6qyX1P0/tABJQxQqtF4Zx0XL2sKBb4uDIbmfUhO2J9LZN0Vv8IFmpnkNLWdRiNcbBF4XtXBah5g5wXREhkJgQ/C3MlYgDPEiPmRce/hf0Z854N+KOYDlZiRFOKhq74d0pDFbtRgMaCM8ZhXrQDGVtftQwk=">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['frmContent'];
+if (!theForm) {
+    theForm = document.frmContent;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="WebResource.axd" type="text/javascript"></script>
+
+
+<script src="ScriptResource_1.axd" type="text/javascript"></script>
+<script src="ScriptResource.axd" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="664D4E4F">
+</div>
+    <a name="inicio"></a>  
+    <section>
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'frmContent', ['tctl00$content$updPanelesN','content_updPanelesN'], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+        
+    <div id="content_updPanelesN">
+	 
+	<section class="modulo modulo-rutasCortas">
+		<div class="rutasCortas">
+			<h1>Rutas Cortas</h1>
+			<p>La guía de Rutas cortas es el primer paso para explorar y conocer un poco más aquello que nos hace peruanos. Está diseñada de tal forma que, en cada una de las rutas, encontrarás los principales atractivos a los que podrás acceder en tu visita, con datos puntuales sobre el destino y lo que descubrirás en el camino.</p>
+			<p>¡Que empiece la aventura!</p>
+			<div class="rutas-cortas-bq rutas-cortas-bq-dsk">
+				<div class="ruta-desde">
+                    <a onclick="SendEventGA(&#39;Miniviajes&#39;, 1, &#39;Rutas desde Arequipa&#39;);" id="content_lnkDestino2D" href="javascript:__doPostBack(&#39;ctl00$content$lnkDestino2D&#39;,&#39;&#39;)">
+                        <div class="foto-ruta-desde">
+						    <img src="images/rutas-cortas-desde-arequipa.jpg" alt="Rutas cortas de Arequipa">
+					    </div>
+					    <div class="title-ruta-desde">Desde Arequipa</div>
+                    </a>
+				</div>
+				<div class="ruta-desde">
+                    <a onclick="SendEventGA(&#39;Miniviajes&#39;, 1, &#39;Rutas desde Junin&#39;);" id="content_lnkDestino5D" href="javascript:__doPostBack(&#39;ctl00$content$lnkDestino5D&#39;,&#39;&#39;)">
+                        <div class="foto-ruta-desde">
+						    <img src="images/rutas-cortas-desde-junin.jpg" alt="Rutas cortas de Junín">
+					    </div>
+					    <div class="title-ruta-desde">Desde Junín</div>
+                    </a>
+				</div>
+				<div class="ruta-desde">
+                    <a onclick="SendEventGA(&#39;Miniviajes&#39;, 1, &#39;Rutas desde Lima&#39;);" id="content_lnkDestino1D" href="javascript:__doPostBack(&#39;ctl00$content$lnkDestino1D&#39;,&#39;&#39;)">
+                        <div class="foto-ruta-desde">
+						    <img src="images/rutas-cortas-desde-lima.jpg" alt="Rutas cortas de Lima">                        
+					    </div>
+					    <div class="title-ruta-desde">Desde Lima</div>
+                    </a>
+				</div>
+				<div class="ruta-desde">
+                    <a onclick="SendEventGA(&#39;Miniviajes&#39;, 1, &#39;Rutas desde La Libertad&#39;);" id="content_lnkDestino3D" href="javascript:__doPostBack(&#39;ctl00$content$lnkDestino3D&#39;,&#39;&#39;)">
+                        <div class="foto-ruta-desde">
+						    <img src="images/rutas-cortas-desde-la-libertad.jpg" alt="Rutas cortas de La Libertad">
+					    </div>
+					    <div class="title-ruta-desde">Desde La Libertad</div>
+                    </a>
+				</div>
+				<div class="ruta-desde">
+                    <a onclick="SendEventGA(&#39;Miniviajes&#39;, 1, &#39;Rutas desde Lambayeque&#39;);" id="content_lnkDestino4D" href="javascript:__doPostBack(&#39;ctl00$content$lnkDestino4D&#39;,&#39;&#39;)">
+                        <div class="foto-ruta-desde">
+						    <img src="images/rutas-cortas-desde-lambayeque.jpg" alt="Rutas cortas de Lambayeque">
+
+					    </div>
+					    <div class="title-ruta-desde">Desde Lambayeque</div>
+                    </a>
+				</div>
+				<div class="ruta-desde">
+                    <a onclick="SendEventGA(&#39;Miniviajes&#39;, 1, &#39;Rutas desde Piura&#39;);" id="content_lnkDestino6D" href="javascript:__doPostBack(&#39;ctl00$content$lnkDestino6D&#39;,&#39;&#39;)">
+                        <div class="foto-ruta-desde">
+						    <img src="images/rutas-cortas-desde-piura.jpg" alt="Rutas cortas de Piura">
+					    </div>
+					    <div class="title-ruta-desde">Desde Piura</div>
+                    </a>
+				</div>
+			</div>
+			<div class="rutas-cortas-bq-mov">
+				<div class="experiencias-filtros">
+                        <a onclick="SendEventGA(&#39;Miniviajes&#39;, 1, &#39;Rutas desde Arequipa&#39;);" id="content_lnkDestino2" class="btn-experiencia" href="javascript:__doPostBack(&#39;ctl00$content$lnkDestino2&#39;,&#39;&#39;)">Desde Arequipa</a>
+                        <a onclick="SendEventGA(&#39;Miniviajes&#39;, 1, &#39;Rutas desde Junin&#39;);" id="content_lnkDestino5" class="btn-experiencia" href="javascript:__doPostBack(&#39;ctl00$content$lnkDestino5&#39;,&#39;&#39;)">Desde Junín</a>
+                        <a onclick="SendEventGA(&#39;Miniviajes&#39;, 1, &#39;Rutas desde Lima&#39;);" id="content_lnkDestino1" class="btn-experiencia" href="javascript:__doPostBack(&#39;ctl00$content$lnkDestino1&#39;,&#39;&#39;)">Desde Lima</a>
+                        <a onclick="SendEventGA(&#39;Miniviajes&#39;, 1, &#39;Rutas desde Piura&#39;);" id="content_lnkDestino6" class="btn-experiencia" href="javascript:__doPostBack(&#39;ctl00$content$lnkDestino6&#39;,&#39;&#39;)">Desde Piura</a>
+                        <a onclick="SendEventGA(&#39;Miniviajes&#39;, 1, &#39;Rutas desde La Libertad&#39;);" id="content_lnkDestino3" class="btn-experiencia" href="javascript:__doPostBack(&#39;ctl00$content$lnkDestino3&#39;,&#39;&#39;)">Desde La Libertad</a>
+                        <a onclick="SendEventGA(&#39;Miniviajes&#39;, 1, &#39;Rutas desde Lambayeque&#39;);" id="content_lnkDestino4" class="btn-experiencia" href="javascript:__doPostBack(&#39;ctl00$content$lnkDestino4&#39;,&#39;&#39;)">Desde Lambayeque</a>
+		        </div>
+			</div>
+		</div>
+	</section>
+    <div id="content_pnlRutasCortasxRegion" class="modulo modulo-rutasCortasdetalle">
+		
+		<div id="content_divMiniviajesRegion" class="rutasCortas-detalle">
+		</div>
+        <div id="loadMore" class="btn-loadmore rutas-cortas-more"><a href="#" onclick="SendEventGA('Miniviajes', 1, 'Ver más rutas');">Ver más rutas</a></div>
+		<div id="top-rutas" class="top-rutas"><a href="#">Regresar</a></div>
+    
+	</div>
+    
+</div>
+	<section class="modulo modulo-rutasCortasDestacadas">
+		<h2>Mira las rutas destacadas del mes</h2>
+		<div id="content_divRutasDestacadas" class="rutasCortasDestacadas"><a href="/rutas-cortas/19_islay-mollendo-y-mejia" onclick="SendEventGA('Miniviajes', 1, 'Destacada: Islay: Mollendo y Mejía');"><div class="rutaCortaDest" style="background-image: url(images/YTQP-RutaCorta-Islay1.jpg)"><div class="title-rcd bg-verde">Islay: Mollendo y Mejía</div></div></a><a href="/rutas-cortas/46_lomas-de-asia-canete-lunahuana-vinac" onclick="SendEventGA('Miniviajes', 1, 'Destacada: Lomas de Asia - Cañete - Lunahuaná - Viñac');"><div class="rutaCortaDest" style="background-image: url(images/YTQP-RutaCorta-Canete1.jpg)"><div class="title-rcd bg-azul">Lomas de Asia - Cañete - Lunahuaná - Viñac</div></div></a><a href="/rutas-cortas/77_pisco-e-ica-entre-el-mar-y-el-desierto" onclick="SendEventGA('Miniviajes', 1, 'Destacada: Pisco e Ica – Entre el mar y el desierto');"><div class="rutaCortaDest" style="background-image: url(images/Dunas-de-Ica.jpg)"><div class="title-rcd bg-amarillo">Pisco e Ica – Entre el mar y el desierto</div></div></a></div>		
+	</section>
+    <div class="recomendaciones-viaje">
+	    <div class="recomendaciones-content">
+		    <h2>Recomendaciones para tu viaje</h2>
+		    <div class="bloques-rec">
+			    <div class="antes-de-viajar">
+				    <div class="img-chicos"><img src="images/chica.png" alt="Recomendaciones Antes de Viajar - Y tú que planes?"></div>
+				    <div class="box-lista">
+					    <div class="titulo-lista">Antes de viajar</div>
+					    <ul class="lista-recomendaciones">
+						    <li>Elige operadores turísticos formales, así evitarás contratiempos en tu viaje.</li>
+						    <li>Para que tu viaje sea el mejor, lleva todo lo que necesites, como repelente, bloqueador, gorro impermeable, lentes, ropa y calzado adecuado para cada lugar que visites.</li>
+						    <li>Sé precavido: coloca toda la documentación necesaria en una bolsa impermeable para que luego no sufran daños.</li>
+					    </ul>
+				    </div>
+			    </div>
+			    <div class="cuando-viajes">
+				    <div class="img-chicos"><img src="images/chico.png" alt="Recomendaciones Cuando Viajes - Y tú que planes?"></div>
+				    <div class="box-lista">
+					    <div class="titulo-lista">Cuando viajes</div>
+					    <ul class="lista-recomendaciones">
+						    <li>Si eres un amante de la naturaleza, recuerda que debes cuidar las áreas protegidas y respetar las indicaciones de los guías.</li>
+						    <li>En tu recorrido respeta a los anfitriones y apoya la economía local.</li>
+					    </ul>
+				    </div>
+			    </div>
+		    </div>
+	    </div>
+	    <div class="bnt-recomendaciones"><a href="#content_updPanelesN">Escoge tu ruta aquí</a></div>
+    </div>
+
+
+
+        
+    </section>
+
+    <footer class="seccion-scroll">
+        <div class=" footer-desktop">
+            <div class="seccion-top">
+                <div class="info-viajero">
+                    <div class="viajero-bq-uno">
+                        <p>Información para el viajero</p>
+                        <ul>
+                            <li>
+                                <a target="_blank" href="http://export.promperu.gob.pe/emailing/2018/set/pdf/feriados_2018.pdf" onclick="SendEventGA('Info Util', 1, 'Feriados 2019');">Lista de Feriados 2019</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="http://www.turismoruralcomunitario.com.pe/" onclick="SendEventGA('Info Util', 1, 'Turismo Rural Comunitario');">Turismo Rural y Comunitario</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://www.clima.com/peru" onclick="SendEventGA('Info Util', 1, 'Clima y Pronostico del tiempo');">Clima y Pronóstico del Tiempo</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="http://www.sernanp.gob.pe/" onclick="SendEventGA('Info Util', 1, 'Tarifas promocionales de Áreas Naturales Protegidas');">Áreas Naturales Protegidas</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="http://turismoeducativo.peru.travel/" onclick="SendEventGA('Info Util', 1, 'Turismo Educativo');">Turismo Educativo</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="viajero-bq-dos">
+                        <div class="iperu-content">
+                            <p>Servicio iPerú</p>
+                            <span class="bajada">Sistema de información y asistencia <br>para viajeros.</span>
+                            <div class="info-iperu">
+                                <a class="link-iperu" target="_blank" href="https://www.peru.travel/es-lat/iperu.aspx" onclick="SendEventGA('Info Util', 1, 'Informacion al Turista');">
+                                    <img src="images/iperu2.png" alt="iPerú">
+                                </a>
+                                <div class="num-iperu">
+                                    <span><a href="https://wa.me/051944492314"><img src="images/whatsapp-icon.png" alt="Whatsapp"> 944492314</a></span>
+                                    <span><img class="tlf-fijo" src="images/fijo.png" alt="Servicio iPerú"> (01) 574-8000</span>
+                                    <span>24 HORAS</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="viajero-bq-tres">
+                        <div class="peru-travel">
+                            <p>Perú Travel</p>
+                            <a class="link-iperu" target="_blank" href="https://www.peru.travel/es-pe/" onclick="SendEventGA('Info Util', 1, 'Peru travel');">
+                                <img src="images/peru-marca.png" alt="Perú Travel">
+                            </a>
+                        </div>                        
+                    </div>
+                </div>
+                <div class="encuentranos">
+                    <p>Encuéntranos en:</p>
+                        <ul class="redes redes-top">
+                            <li>
+                                <a target="_blank" href="https://www.facebook.com/pages/Visit-Peru/524042817717056">
+                                    <img src="images/fb.png" alt="Facebook - Y tú que Planes?">
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://twitter.com/conoceelperu">
+                                    <img src="images/tw.png" alt="Twitter - Y tú que Planes?">
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="http://www.youtube.com/visitperu">
+                                    <img src="images/yt.png" alt="Youtube - Y tú que Planes?">
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://www.flickr.com/photos/peru">
+                                    <img src="images/flkr.png" alt="Flickr - Y tú que Planes?">
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="redes redes-down">
+                            <li>
+                                <a target="_blank" href="https://open.spotify.com/user/yt%C3%BAqu%C3%A9planes/playlist/7pTRlBhxN2YhkEqtwu0T4k">
+                                    <img src="images/spotify.png" alt="Spotify - Y tú que Planes?">
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://www.instagram.com/ytuqueplanes/">
+                                    <img src="images/insta.png" alt="Instagram - Y tú que Planes?">
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://www.pinterest.es/peru/pins/">
+                                    <img src="images/pinterest.png" alt="Pinterest - Y tú que Planes?">
+                                </a>
+                            </li>
+                        </ul>
+                </div>
+                <div class="suscribete">
+                    <div class="text-suscribe">
+                        <p>Descubre los</p>
+                        <p class="otra-clase">destinos y ofertas de viaje</p>
+                        <p>que el Perú tiene para ti.</p>
+                        <div class="btn-suscribe">
+                            <a href="/suscribete.aspx" onclick="SendEventGA('Suscribete', 1, 'suscribete-footer');">Suscríbete</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="seccion-down">
+                <div class="seccion-down-left">
+                    <a class="mapasitio" href="/sitemap" onclick="SendEventGA('Mapa de Sitio', 1, 'mapa-de-sitio-footer');">Mapa de Sitio</a>
+                </div>
+                <div class="seccion-down-md">
+                    <ul class="partners">
+                        <li>
+                            <img src="images/promperu.png" alt="Promperú">
+                        </li>
+                        <li>
+                            <img src="images/perumarca.png" alt="Perú">
+                        </li>
+                    </ul>
+                </div>
+                <div class="seccion-down-right">
+                    <a class="terminos linklegal" href="#aviso-legal" onclick="SendEventGA('Aviso Legal', 1, 'aviso-legal-footer');">Aviso Legal</a>
+                    <a class="terminos" href="/terminos-condiciones.aspx" onclick="SendEventGA('Terminos y Condiciones', 1, 'terminos-condiciones-footer');">Términos y Condiciones</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="aviso-legal" class="legalPopup" style="display: none;">
+       <div class="aviso-legal-content">
+            <h2>Aviso Legal</h2>
+            <p>La información contenida en el presente sitio web, tiene por objeto la facilitación de información
+            relacionada a los productos, servicios y/o promociones que puedan ofrecer diferentes empresas
+            del sector turismo de todas las regiones, en adelante LOS TITULARES, con los cuales <b>PROMPERÚ</b>
+            no guarda vinculación de ningún tipo; por lo tanto, <b>PROMPERÚ</b> no asumirá responsabilidad, bajo
+            ninguna circunstancia, por el daño o perjuicio, directo o indirecto, que se pueda generar y/o
+            derivar por la información, parcial o total, incluida en esta página, la cual ha sido elaborada a su
+            vez en virtud a la información facilitada por LOS TITULARES. De igual forma, <b>PROMPERÚ</b> no
+            asumirá responsabilidad alguna por la exactitud, calidad o idoneidad del bien o servicio ofrecido
+            por LOS TITULARES y que es referido en la presente página web, los que serán de exclusiva
+            responsabilidad de cada uno de los titulares.</p>
+
+            <p>Asimismo, <b>PROMPERÚ</b> no es responsable por las modificaciones y/o actualizaciones que, sin
+            previo aviso, LOS TITULARES puedan efectuar respecto a la información contenida en la presente
+            página web o en su página web o redes sociales; debiendo asumir LOS TITULARES, de forma
+            íntegra y exclusiva, la responsabilidad por cualquier daño o perjuicio, directo o indirecto, que se
+            pueda generar y/o derivar de ellos.</p>
+
+            <p>En tal sentido, <b>PROMPERÚ</b> recomienda evaluar la conveniencia de ponerse en contacto directo
+            con cada uno de LOS TITULARES, para tener un mejor, cabal y oportuno conocimiento respecto de
+            los términos y condiciones de los productos, servicios y/o promociones que puedan ofrecer.</p>
+       </div>
+    </div>
+
+    
+
+    
+    </form>
+    
+    <script type="text/javascript" src="js/internas.js"></script>
+
+    <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+
+
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/header.js"></script>  
+    <script type="text/javascript" src="js/jquery.autocomplete.js"></script>
+    <script type="text/javascript" src="js/application-new.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".linklegal").fancybox({
+                'hideOnContentClick': true
+            });
+
+            /* Apply fancybox to multiple items */
+
+            $(".legalPopup").fancybox({
+                'width': 600,
+                'transitionIn': 'elastic',
+                'transitionOut': 'elastic',
+                'speedIn': 600,
+                'speedOut': 200,
+                'overlayShow': false
+            });
+        });
+    </script>
+        
+    
+
+
+</body>
 </html>
